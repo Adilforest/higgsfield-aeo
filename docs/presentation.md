@@ -1,6 +1,6 @@
 # Presentation: 5 slides
 
-Text version of the deck (5 minutes + 5 minutes Q&A). Numbers and sources are in `docs/research/`.
+Text version of the deck (5 minutes + 5 minutes Q&A). Numbers and sources are in `docs/research/`; a slide-by-slide speaker guide with the origin of every figure is in [`speaker-guide.md`](speaker-guide.md).
 
 ## 1. Landscape — Making Higgsfield the #1 answer for AI video ads
 
@@ -64,3 +64,5 @@ Intent registry (500 intents × 3 phrasings) → tiered sampling (top-100 weekly
 | One prompt: same brand list twice under 1 in 100 | Clusters × paraphrases × samples |
 | Page per intent: scaled content risk | Win the few domains cited everywhere |
 | Attribution: models, PR and content move at once | Test vs control clusters, diff-in-diff |
+
+Footer of the last slide: **Code, configs and research:** [github.com/Adilforest/higgsfield-aeo](https://github.com/Adilforest/higgsfield-aeo)

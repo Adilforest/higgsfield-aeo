@@ -30,6 +30,7 @@
 | [`docs/research/02-higgsfield-promotion.md`](docs/research/02-higgsfield-promotion.md) | ландшафт, аудит Higgsfield, диагноз, 10 возможностей, бюджет |
 | [`docs/research/03-scaling.md`](docs/research/03-scaling.md) | карта движков, API для мониторинга, 500 интентов, архитектура |
 | [`docs/presentation.md`](docs/presentation.md) | текст 5 слайдов |
+| [`docs/speaker-guide.md`](docs/speaker-guide.md) | **разбор каждого слайда**: что говорить, откуда каждая цифра, как составлялся ресёрч, вопросы жюри, глоссарий |
 | [`docs/tracker.md`](docs/tracker.md) | как работает трекер и что значат метрики |
 | `aeo/`, `tests/` | трекер видимости и тесты |
 
