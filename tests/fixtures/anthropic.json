@@ -1,0 +1,15 @@
+{
+  "content": [
+    {"type": "server_tool_use", "id": "srvtoolu_1", "name": "web_search", "input": {"query": "best AI tool for video ads"}},
+    {"type": "web_search_tool_result", "tool_use_id": "srvtoolu_1", "content": [
+      {"type": "web_search_result", "url": "https://www.g2.com/categories/ai-video-generator", "title": "G2 AI video", "encrypted_content": "x"},
+      {"type": "web_search_result", "url": "https://creatify.ai/blog/best", "title": "Creatify blog", "encrypted_content": "y"}
+    ]},
+    {"type": "text", "text": "Based on reviews, "},
+    {"type": "text", "text": "Creatify is the most recommended tool for video ads", "citations": [
+      {"type": "web_search_result_location", "url": "https://www.g2.com/categories/ai-video-generator", "title": "G2 AI video", "cited_text": "..."}
+    ]},
+    {"type": "text", "text": ", followed by Synthesia."}
+  ],
+  "stop_reason": "end_turn"
+}

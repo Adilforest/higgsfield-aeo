@@ -1,0 +1,5180 @@
+intents:
+- id: video-ads--best
+  cluster: video-ads
+  template: best
+  funnel: consideration
+  dims:
+    use_case: video-ads
+  priority: 100.0
+  prompts:
+  - What is the best AI tool for creating video ads?
+- id: ugc-ads--best
+  cluster: ugc-ads
+  template: best
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+  priority: 95.0
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads?
+- id: product-video--best
+  cluster: product-video
+  template: best
+  funnel: consideration
+  dims:
+    use_case: product-video
+  priority: 90.0
+  prompts:
+  - What is the best AI tool for turning product photos into videos?
+- id: image-to-video--best
+  cluster: image-to-video
+  template: best
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+  priority: 85.0
+  prompts:
+  - What is the best AI tool for image-to-video generation?
+- id: social-shorts--best
+  cluster: social-shorts
+  template: best
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+  priority: 80.0
+  prompts:
+  - What is the best AI tool for making short-form social videos?
+- id: video-ads--persona--dtc-founder
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: video-ads
+  priority: 80.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for creating video ads?
+- id: video-ads--persona--performance-marketer
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: video-ads
+  priority: 80.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for creating video ads?
+- id: ugc-ads--persona--dtc-founder
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ugc-ads
+  priority: 76.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for creating UGC-style video ads?
+- id: ugc-ads--persona--performance-marketer
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ugc-ads
+  priority: 76.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for creating UGC-style video ads?
+- id: brand-content--best
+  cluster: brand-content
+  template: best
+  funnel: consideration
+  dims:
+    use_case: brand-content
+  priority: 75.0
+  prompts:
+  - What is the best AI tool for creating branded marketing videos?
+- id: cinematic-camera--best
+  cluster: cinematic-camera
+  template: best
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+  priority: 75.0
+  prompts:
+  - What is the best AI tool for cinematic camera movements in AI video?
+- id: video-ads--platform--meta-ads
+  cluster: video-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: video-ads
+    platform: meta-ads
+  priority: 75.0
+  prompts:
+  - What is the best AI tool for creating video ads for Facebook and Instagram ads?
+- id: video-ads--platform--tiktok
+  cluster: video-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: video-ads
+    platform: tiktok
+  priority: 75.0
+  prompts:
+  - What is the best AI tool for creating video ads for TikTok?
+- id: product-video--persona--dtc-founder
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: product-video
+  priority: 72.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for turning product photos into videos?
+- id: product-video--persona--performance-marketer
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: product-video
+  priority: 72.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for turning product photos into videos?
+- id: video-ads--persona--agency
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: video-ads
+  priority: 72.0
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for creating video ads?
+- id: video-ads--persona--shopify-seller
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: video-ads
+  priority: 72.0
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for creating video ads?
+- id: ugc-ads--platform--meta-ads
+  cluster: ugc-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 71.2
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads for Facebook and Instagram ads?
+- id: ugc-ads--platform--tiktok
+  cluster: ugc-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 71.2
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads for TikTok?
+- id: ai-avatar--best
+  cluster: ai-avatar
+  template: best
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+  priority: 70.0
+  prompts:
+  - What is the best AI tool for AI avatar and talking-head videos?
+- id: ugc-ads--persona--agency
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ugc-ads
+  priority: 68.4
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for creating UGC-style video ads?
+- id: ugc-ads--persona--shopify-seller
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ugc-ads
+  priority: 68.4
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for creating UGC-style video ads?
+- id: image-to-video--persona--dtc-founder
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: image-to-video
+  priority: 68.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for image-to-video generation?
+- id: image-to-video--persona--performance-marketer
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: image-to-video
+  priority: 68.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for image-to-video generation?
+- id: product-video--platform--meta-ads
+  cluster: product-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: product-video
+    platform: meta-ads
+  priority: 67.5
+  prompts:
+  - What is the best AI tool for turning product photos into videos for Facebook and Instagram ads?
+- id: product-video--platform--tiktok
+  cluster: product-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: product-video
+    platform: tiktok
+  priority: 67.5
+  prompts:
+  - What is the best AI tool for turning product photos into videos for TikTok?
+- id: video-ads--platform--reels
+  cluster: video-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: video-ads
+    platform: reels
+  priority: 67.5
+  prompts:
+  - What is the best AI tool for creating video ads for Instagram Reels?
+- id: vfx-effects--best
+  cluster: vfx-effects
+  template: best
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+  priority: 65.0
+  prompts:
+  - What is the best AI tool for adding VFX and visual effects to videos?
+- id: product-video--persona--agency
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: product-video
+  priority: 64.8
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for turning product photos into videos?
+- id: product-video--persona--shopify-seller
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: product-video
+  priority: 64.8
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for turning product photos into videos?
+- id: ugc-ads--platform--reels
+  cluster: ugc-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+    platform: reels
+  priority: 64.1
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads for Instagram Reels?
+- id: social-shorts--persona--dtc-founder
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: social-shorts
+  priority: 64.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for making short-form social videos?
+- id: social-shorts--persona--performance-marketer
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: social-shorts
+  priority: 64.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for making short-form social videos?
+- id: video-ads--persona--creator
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: video-ads
+  priority: 64.0
+  prompts:
+  - I'm a content creator. What is the best AI tool for creating video ads?
+- id: video-ads--persona--smm
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: video-ads
+  priority: 64.0
+  prompts:
+  - I'm a social media manager. What is the best AI tool for creating video ads?
+- id: image-to-video--platform--meta-ads
+  cluster: image-to-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 63.7
+  prompts:
+  - What is the best AI tool for image-to-video generation for Facebook and Instagram ads?
+- id: image-to-video--platform--tiktok
+  cluster: image-to-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+    platform: tiktok
+  priority: 63.7
+  prompts:
+  - What is the best AI tool for image-to-video generation for TikTok?
+- id: image-to-video--persona--agency
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: image-to-video
+  priority: 61.2
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for image-to-video generation?
+- id: image-to-video--persona--shopify-seller
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: image-to-video
+  priority: 61.2
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for image-to-video generation?
+- id: ugc-ads--persona--creator
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ugc-ads
+  priority: 60.8
+  prompts:
+  - I'm a content creator. What is the best AI tool for creating UGC-style video ads?
+- id: ugc-ads--persona--smm
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ugc-ads
+  priority: 60.8
+  prompts:
+  - I'm a social media manager. What is the best AI tool for creating UGC-style video ads?
+- id: product-video--platform--reels
+  cluster: product-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: product-video
+    platform: reels
+  priority: 60.8
+  prompts:
+  - What is the best AI tool for turning product photos into videos for Instagram Reels?
+- id: brand-content--persona--dtc-founder
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: brand-content
+  priority: 60.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for creating branded marketing videos?
+- id: brand-content--persona--performance-marketer
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: brand-content
+  priority: 60.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for creating branded marketing videos?
+- id: cinematic-camera--persona--dtc-founder
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: cinematic-camera
+  priority: 60.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for cinematic camera movements in AI video?
+- id: cinematic-camera--persona--performance-marketer
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: cinematic-camera
+  priority: 60.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for cinematic camera movements in AI video?
+- id: social-shorts--platform--meta-ads
+  cluster: social-shorts
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 60.0
+  prompts:
+  - What is the best AI tool for making short-form social videos for Facebook and Instagram ads?
+- id: social-shorts--platform--tiktok
+  cluster: social-shorts
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+    platform: tiktok
+  priority: 60.0
+  prompts:
+  - What is the best AI tool for making short-form social videos for TikTok?
+- id: video-ads--platform--yt-shorts
+  cluster: video-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 60.0
+  prompts:
+  - What is the best AI tool for creating video ads for YouTube Shorts?
+- id: ai-image--best
+  cluster: ai-image
+  template: best
+  funnel: consideration
+  dims:
+    use_case: ai-image
+  priority: 60.0
+  prompts:
+  - What is the best AI tool for generating realistic AI photos?
+- id: ai-influencer--best
+  cluster: ai-influencer
+  template: best
+  funnel: consideration
+  dims:
+    use_case: ai-influencer
+  priority: 60.0
+  prompts:
+  - What is the best AI tool for creating an AI influencer?
+- id: lip-sync--best
+  cluster: lip-sync
+  template: best
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+  priority: 60.0
+  prompts:
+  - What is the best AI tool for lip-sync videos?
+- id: video-ads--alternatives--arcads
+  cluster: video-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: video-ads
+  priority: 60.0
+  prompts:
+  - What are the best alternatives to Arcads for creating video ads?
+- id: video-ads--alternatives--creatify
+  cluster: video-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: video-ads
+  priority: 60.0
+  prompts:
+  - What are the best alternatives to Creatify for creating video ads?
+- id: product-video--persona--creator
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: product-video
+  priority: 57.6
+  prompts:
+  - I'm a content creator. What is the best AI tool for turning product photos into videos?
+- id: product-video--persona--smm
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: product-video
+  priority: 57.6
+  prompts:
+  - I'm a social media manager. What is the best AI tool for turning product photos into videos?
+- id: social-shorts--persona--agency
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: social-shorts
+  priority: 57.6
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for making short-form social videos?
+- id: social-shorts--persona--shopify-seller
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: social-shorts
+  priority: 57.6
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for making short-form social videos?
+- id: image-to-video--platform--reels
+  cluster: image-to-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+    platform: reels
+  priority: 57.4
+  prompts:
+  - What is the best AI tool for image-to-video generation for Instagram Reels?
+- id: ugc-ads--alternatives--arcads
+  cluster: ugc-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: ugc-ads
+  priority: 57.0
+  prompts:
+  - What are the best alternatives to Arcads for creating UGC-style video ads?
+- id: ugc-ads--alternatives--creatify
+  cluster: ugc-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: ugc-ads
+  priority: 57.0
+  prompts:
+  - What are the best alternatives to Creatify for creating UGC-style video ads?
+- id: ugc-ads--platform--yt-shorts
+  cluster: ugc-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 57.0
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads for YouTube Shorts?
+- id: brand-content--platform--meta-ads
+  cluster: brand-content
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: brand-content
+    platform: meta-ads
+  priority: 56.2
+  prompts:
+  - What is the best AI tool for creating branded marketing videos for Facebook and Instagram ads?
+- id: brand-content--platform--tiktok
+  cluster: brand-content
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: brand-content
+    platform: tiktok
+  priority: 56.2
+  prompts:
+  - What is the best AI tool for creating branded marketing videos for TikTok?
+- id: cinematic-camera--platform--meta-ads
+  cluster: cinematic-camera
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 56.2
+  prompts:
+  - What is the best AI tool for cinematic camera movements in AI video for Facebook and Instagram ads?
+- id: cinematic-camera--platform--tiktok
+  cluster: cinematic-camera
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 56.2
+  prompts:
+  - What is the best AI tool for cinematic camera movements in AI video for TikTok?
+- id: ai-avatar--persona--dtc-founder
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-avatar
+  priority: 56.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for AI avatar and talking-head videos?
+- id: ai-avatar--persona--performance-marketer
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-avatar
+  priority: 56.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for AI avatar and talking-head videos?
+- id: video-ads--persona--smb
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: video-ads
+  priority: 56.0
+  prompts:
+  - I'm a small business owner. What is the best AI tool for creating video ads?
+- id: music-video--best
+  cluster: music-video
+  template: best
+  funnel: consideration
+  dims:
+    use_case: music-video
+  priority: 55.0
+  prompts:
+  - What is the best AI tool for making music videos?
+- id: video-ads--free
+  cluster: video-ads
+  template: free
+  funnel: consideration
+  dims:
+    use_case: video-ads
+  priority: 55.0
+  prompts:
+  - What is the best free AI tool for creating video ads?
+- id: image-to-video--persona--creator
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: image-to-video
+  priority: 54.4
+  prompts:
+  - I'm a content creator. What is the best AI tool for image-to-video generation?
+- id: image-to-video--persona--smm
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: image-to-video
+  priority: 54.4
+  prompts:
+  - I'm a social media manager. What is the best AI tool for image-to-video generation?
+- id: social-shorts--platform--reels
+  cluster: social-shorts
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+    platform: reels
+  priority: 54.0
+  prompts:
+  - What is the best AI tool for making short-form social videos for Instagram Reels?
+- id: brand-content--persona--agency
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: brand-content
+  priority: 54.0
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for creating branded marketing videos?
+- id: brand-content--persona--shopify-seller
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: brand-content
+  priority: 54.0
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for creating branded marketing videos?
+- id: cinematic-camera--persona--agency
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: cinematic-camera
+  priority: 54.0
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for cinematic camera movements in AI video?
+- id: cinematic-camera--persona--shopify-seller
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: cinematic-camera
+  priority: 54.0
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for cinematic camera movements in AI video?
+- id: product-video--alternatives--arcads
+  cluster: product-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: product-video
+  priority: 54.0
+  prompts:
+  - What are the best alternatives to Arcads for turning product photos into videos?
+- id: product-video--alternatives--creatify
+  cluster: product-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: product-video
+  priority: 54.0
+  prompts:
+  - What are the best alternatives to Creatify for turning product photos into videos?
+- id: product-video--platform--yt-shorts
+  cluster: product-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: product-video
+    platform: yt-shorts
+  priority: 54.0
+  prompts:
+  - What is the best AI tool for turning product photos into videos for YouTube Shorts?
+- id: ugc-ads--persona--smb
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ugc-ads
+  priority: 53.2
+  prompts:
+  - I'm a small business owner. What is the best AI tool for creating UGC-style video ads?
+- id: ai-avatar--platform--meta-ads
+  cluster: ai-avatar
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+    platform: meta-ads
+  priority: 52.5
+  prompts:
+  - What is the best AI tool for AI avatar and talking-head videos for Facebook and Instagram ads?
+- id: ai-avatar--platform--tiktok
+  cluster: ai-avatar
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+    platform: tiktok
+  priority: 52.5
+  prompts:
+  - What is the best AI tool for AI avatar and talking-head videos for TikTok?
+- id: ugc-ads--free
+  cluster: ugc-ads
+  template: free
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+  priority: 52.2
+  prompts:
+  - What is the best free AI tool for creating UGC-style video ads?
+- id: vfx-effects--persona--dtc-founder
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: vfx-effects
+  priority: 52.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for adding VFX and visual effects to videos?
+- id: vfx-effects--persona--performance-marketer
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: vfx-effects
+  priority: 52.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for adding VFX and visual effects to videos?
+- id: social-shorts--persona--creator
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: social-shorts
+  priority: 51.2
+  prompts:
+  - I'm a content creator. What is the best AI tool for making short-form social videos?
+- id: social-shorts--persona--smm
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: social-shorts
+  priority: 51.2
+  prompts:
+  - I'm a social media manager. What is the best AI tool for making short-form social videos?
+- id: image-to-video--alternatives--arcads
+  cluster: image-to-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: image-to-video
+  priority: 51.0
+  prompts:
+  - What are the best alternatives to Arcads for image-to-video generation?
+- id: image-to-video--alternatives--creatify
+  cluster: image-to-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: image-to-video
+  priority: 51.0
+  prompts:
+  - What are the best alternatives to Creatify for image-to-video generation?
+- id: image-to-video--platform--yt-shorts
+  cluster: image-to-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+    platform: yt-shorts
+  priority: 51.0
+  prompts:
+  - What is the best AI tool for image-to-video generation for YouTube Shorts?
+- id: brand-content--platform--reels
+  cluster: brand-content
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: brand-content
+    platform: reels
+  priority: 50.6
+  prompts:
+  - What is the best AI tool for creating branded marketing videos for Instagram Reels?
+- id: cinematic-camera--platform--reels
+  cluster: cinematic-camera
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+    platform: reels
+  priority: 50.6
+  prompts:
+  - What is the best AI tool for cinematic camera movements in AI video for Instagram Reels?
+- id: ai-avatar--persona--agency
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ai-avatar
+  priority: 50.4
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for AI avatar and talking-head videos?
+- id: ai-avatar--persona--shopify-seller
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ai-avatar
+  priority: 50.4
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for AI avatar and talking-head videos?
+- id: product-video--persona--smb
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: product-video
+  priority: 50.4
+  prompts:
+  - I'm a small business owner. What is the best AI tool for turning product photos into videos?
+- id: product-video--free
+  cluster: product-video
+  template: free
+  funnel: consideration
+  dims:
+    use_case: product-video
+  priority: 49.5
+  prompts:
+  - What is the best free AI tool for turning product photos into videos?
+- id: vfx-effects--platform--meta-ads
+  cluster: vfx-effects
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+    platform: meta-ads
+  priority: 48.8
+  prompts:
+  - What is the best AI tool for adding VFX and visual effects to videos for Facebook and Instagram ads?
+- id: vfx-effects--platform--tiktok
+  cluster: vfx-effects
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+    platform: tiktok
+  priority: 48.8
+  prompts:
+  - What is the best AI tool for adding VFX and visual effects to videos for TikTok?
+- id: brand-content--persona--creator
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: brand-content
+  priority: 48.0
+  prompts:
+  - I'm a content creator. What is the best AI tool for creating branded marketing videos?
+- id: brand-content--persona--smm
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: brand-content
+  priority: 48.0
+  prompts:
+  - I'm a social media manager. What is the best AI tool for creating branded marketing videos?
+- id: cinematic-camera--persona--creator
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: cinematic-camera
+  priority: 48.0
+  prompts:
+  - I'm a content creator. What is the best AI tool for cinematic camera movements in AI video?
+- id: cinematic-camera--persona--smm
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: cinematic-camera
+  priority: 48.0
+  prompts:
+  - I'm a social media manager. What is the best AI tool for cinematic camera movements in AI video?
+- id: social-shorts--platform--yt-shorts
+  cluster: social-shorts
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+    platform: yt-shorts
+  priority: 48.0
+  prompts:
+  - What is the best AI tool for making short-form social videos for YouTube Shorts?
+- id: ai-image--persona--dtc-founder
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-image
+  priority: 48.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for generating realistic AI photos?
+- id: ai-image--persona--performance-marketer
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-image
+  priority: 48.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for generating realistic AI photos?
+- id: ai-influencer--persona--dtc-founder
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-influencer
+  priority: 48.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for creating an AI influencer?
+- id: ai-influencer--persona--performance-marketer
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-influencer
+  priority: 48.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for creating an AI influencer?
+- id: lip-sync--persona--dtc-founder
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: lip-sync
+  priority: 48.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for lip-sync videos?
+- id: lip-sync--persona--performance-marketer
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: lip-sync
+  priority: 48.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for lip-sync videos?
+- id: social-shorts--alternatives--arcads
+  cluster: social-shorts
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: social-shorts
+  priority: 48.0
+  prompts:
+  - What are the best alternatives to Arcads for making short-form social videos?
+- id: social-shorts--alternatives--creatify
+  cluster: social-shorts
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: social-shorts
+  priority: 48.0
+  prompts:
+  - What are the best alternatives to Creatify for making short-form social videos?
+- id: video-ads--alternatives--heygen
+  cluster: video-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: video-ads
+  priority: 48.0
+  prompts:
+  - What are the best alternatives to HeyGen for creating video ads?
+- id: video-ads--alternatives--runway
+  cluster: video-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: video-ads
+  priority: 48.0
+  prompts:
+  - What are the best alternatives to Runway for creating video ads?
+- id: video-ads--persona--youtuber
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: video-ads
+  priority: 48.0
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for creating video ads?
+- id: image-to-video--persona--smb
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: image-to-video
+  priority: 47.6
+  prompts:
+  - I'm a small business owner. What is the best AI tool for image-to-video generation?
+- id: ai-avatar--platform--reels
+  cluster: ai-avatar
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+    platform: reels
+  priority: 47.2
+  prompts:
+  - What is the best AI tool for AI avatar and talking-head videos for Instagram Reels?
+- id: vfx-effects--persona--agency
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: vfx-effects
+  priority: 46.8
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for adding VFX and visual effects to videos?
+- id: vfx-effects--persona--shopify-seller
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: vfx-effects
+  priority: 46.8
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for adding VFX and visual effects to videos?
+- id: image-to-video--free
+  cluster: image-to-video
+  template: free
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+  priority: 46.8
+  prompts:
+  - What is the best free AI tool for image-to-video generation?
+- id: ugc-ads--alternatives--heygen
+  cluster: ugc-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: ugc-ads
+  priority: 45.6
+  prompts:
+  - What are the best alternatives to HeyGen for creating UGC-style video ads?
+- id: ugc-ads--alternatives--runway
+  cluster: ugc-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: ugc-ads
+  priority: 45.6
+  prompts:
+  - What are the best alternatives to Runway for creating UGC-style video ads?
+- id: ugc-ads--persona--youtuber
+  cluster: ugc-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: ugc-ads
+  priority: 45.6
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for creating UGC-style video ads?
+- id: brand-content--platform--yt-shorts
+  cluster: brand-content
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: brand-content
+    platform: yt-shorts
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for creating branded marketing videos for YouTube Shorts?
+- id: cinematic-camera--platform--yt-shorts
+  cluster: cinematic-camera
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+    platform: yt-shorts
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for cinematic camera movements in AI video for YouTube Shorts?
+- id: film-previs--best
+  cluster: film-previs
+  template: best
+  funnel: consideration
+  dims:
+    use_case: film-previs
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for film pre-visualization and storyboards?
+- id: video-ads--howto
+  cluster: video-ads
+  template: howto
+  funnel: awareness
+  dims:
+    use_case_object: video-ads
+  priority: 45.0
+  prompts:
+  - How do I make video ads with AI?
+- id: ai-image--platform--meta-ads
+  cluster: ai-image
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-image
+    platform: meta-ads
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for generating realistic AI photos for Facebook and Instagram ads?
+- id: ai-image--platform--tiktok
+  cluster: ai-image
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-image
+    platform: tiktok
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for generating realistic AI photos for TikTok?
+- id: ai-influencer--platform--meta-ads
+  cluster: ai-influencer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-influencer
+    platform: meta-ads
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for creating an AI influencer for Facebook and Instagram ads?
+- id: ai-influencer--platform--tiktok
+  cluster: ai-influencer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-influencer
+    platform: tiktok
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for creating an AI influencer for TikTok?
+- id: brand-content--alternatives--arcads
+  cluster: brand-content
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: brand-content
+  priority: 45.0
+  prompts:
+  - What are the best alternatives to Arcads for creating branded marketing videos?
+- id: brand-content--alternatives--creatify
+  cluster: brand-content
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: brand-content
+  priority: 45.0
+  prompts:
+  - What are the best alternatives to Creatify for creating branded marketing videos?
+- id: cinematic-camera--alternatives--arcads
+  cluster: cinematic-camera
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: cinematic-camera
+  priority: 45.0
+  prompts:
+  - What are the best alternatives to Arcads for cinematic camera movements in AI video?
+- id: cinematic-camera--alternatives--creatify
+  cluster: cinematic-camera
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: cinematic-camera
+  priority: 45.0
+  prompts:
+  - What are the best alternatives to Creatify for cinematic camera movements in AI video?
+- id: lip-sync--platform--meta-ads
+  cluster: lip-sync
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+    platform: meta-ads
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for lip-sync videos for Facebook and Instagram ads?
+- id: lip-sync--platform--tiktok
+  cluster: lip-sync
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+    platform: tiktok
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for lip-sync videos for TikTok?
+- id: video-ads--platform--amazon
+  cluster: video-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: video-ads
+    platform: amazon
+  priority: 45.0
+  prompts:
+  - What is the best AI tool for creating video ads for Amazon product listings?
+- id: ai-avatar--persona--creator
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ai-avatar
+  priority: 44.8
+  prompts:
+  - I'm a content creator. What is the best AI tool for AI avatar and talking-head videos?
+- id: ai-avatar--persona--smm
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ai-avatar
+  priority: 44.8
+  prompts:
+  - I'm a social media manager. What is the best AI tool for AI avatar and talking-head videos?
+- id: social-shorts--persona--smb
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: social-shorts
+  priority: 44.8
+  prompts:
+  - I'm a small business owner. What is the best AI tool for making short-form social videos?
+- id: social-shorts--free
+  cluster: social-shorts
+  template: free
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+  priority: 44.0
+  prompts:
+  - What is the best free AI tool for making short-form social videos?
+- id: vfx-effects--platform--reels
+  cluster: vfx-effects
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+    platform: reels
+  priority: 43.9
+  prompts:
+  - What is the best AI tool for adding VFX and visual effects to videos for Instagram Reels?
+- id: ai-image--persona--agency
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ai-image
+  priority: 43.2
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for generating realistic AI photos?
+- id: ai-image--persona--shopify-seller
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ai-image
+  priority: 43.2
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for generating realistic AI photos?
+- id: ai-influencer--persona--agency
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ai-influencer
+  priority: 43.2
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for creating an AI influencer?
+- id: ai-influencer--persona--shopify-seller
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ai-influencer
+  priority: 43.2
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for creating an AI influencer?
+- id: lip-sync--persona--agency
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: lip-sync
+  priority: 43.2
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for lip-sync videos?
+- id: lip-sync--persona--shopify-seller
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: lip-sync
+  priority: 43.2
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for lip-sync videos?
+- id: product-video--alternatives--heygen
+  cluster: product-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: product-video
+  priority: 43.2
+  prompts:
+  - What are the best alternatives to HeyGen for turning product photos into videos?
+- id: product-video--alternatives--runway
+  cluster: product-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: product-video
+  priority: 43.2
+  prompts:
+  - What are the best alternatives to Runway for turning product photos into videos?
+- id: product-video--persona--youtuber
+  cluster: product-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: product-video
+  priority: 43.2
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for turning product photos into videos?
+- id: ugc-ads--howto
+  cluster: ugc-ads
+  template: howto
+  funnel: awareness
+  dims:
+    use_case_object: ugc-ads
+  priority: 42.8
+  prompts:
+  - How do I make UGC ads with AI?
+- id: ugc-ads--platform--amazon
+  cluster: ugc-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+    platform: amazon
+  priority: 42.7
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads for Amazon product listings?
+- id: ai-avatar--alternatives--arcads
+  cluster: ai-avatar
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: ai-avatar
+  priority: 42.0
+  prompts:
+  - What are the best alternatives to Arcads for AI avatar and talking-head videos?
+- id: ai-avatar--alternatives--creatify
+  cluster: ai-avatar
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: ai-avatar
+  priority: 42.0
+  prompts:
+  - What are the best alternatives to Creatify for AI avatar and talking-head videos?
+- id: video-ads--alternatives--invideo
+  cluster: video-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: video-ads
+  priority: 42.0
+  prompts:
+  - What are the best alternatives to InVideo for creating video ads?
+- id: ai-avatar--platform--yt-shorts
+  cluster: ai-avatar
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+    platform: yt-shorts
+  priority: 42.0
+  prompts:
+  - What is the best AI tool for AI avatar and talking-head videos for YouTube Shorts?
+- id: brand-content--persona--smb
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: brand-content
+  priority: 42.0
+  prompts:
+  - I'm a small business owner. What is the best AI tool for creating branded marketing videos?
+- id: cinematic-camera--persona--smb
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: cinematic-camera
+  priority: 42.0
+  prompts:
+  - I'm a small business owner. What is the best AI tool for cinematic camera movements in AI video?
+- id: vfx-effects--persona--creator
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: vfx-effects
+  priority: 41.6
+  prompts:
+  - I'm a content creator. What is the best AI tool for adding VFX and visual effects to videos?
+- id: vfx-effects--persona--smm
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: vfx-effects
+  priority: 41.6
+  prompts:
+  - I'm a social media manager. What is the best AI tool for adding VFX and visual effects to videos?
+- id: brand-content--free
+  cluster: brand-content
+  template: free
+  funnel: consideration
+  dims:
+    use_case: brand-content
+  priority: 41.2
+  prompts:
+  - What is the best free AI tool for creating branded marketing videos?
+- id: cinematic-camera--free
+  cluster: cinematic-camera
+  template: free
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+  priority: 41.2
+  prompts:
+  - What is the best free AI tool for cinematic camera movements in AI video?
+- id: music-video--platform--meta-ads
+  cluster: music-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: music-video
+    platform: meta-ads
+  priority: 41.2
+  prompts:
+  - What is the best AI tool for making music videos for Facebook and Instagram ads?
+- id: music-video--platform--tiktok
+  cluster: music-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: music-video
+    platform: tiktok
+  priority: 41.2
+  prompts:
+  - What is the best AI tool for making music videos for TikTok?
+- id: image-to-video--alternatives--heygen
+  cluster: image-to-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: image-to-video
+  priority: 40.8
+  prompts:
+  - What are the best alternatives to HeyGen for image-to-video generation?
+- id: image-to-video--alternatives--runway
+  cluster: image-to-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: image-to-video
+  priority: 40.8
+  prompts:
+  - What are the best alternatives to Runway for image-to-video generation?
+- id: image-to-video--persona--youtuber
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: image-to-video
+  priority: 40.8
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for image-to-video generation?
+- id: product-video--howto
+  cluster: product-video
+  template: howto
+  funnel: awareness
+  dims:
+    use_case_object: product-video
+  priority: 40.5
+  prompts:
+  - How do I make a product video from photos with AI?
+- id: product-video--platform--amazon
+  cluster: product-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: product-video
+    platform: amazon
+  priority: 40.5
+  prompts:
+  - What is the best AI tool for turning product photos into videos for Amazon product listings?
+- id: ai-image--platform--reels
+  cluster: ai-image
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-image
+    platform: reels
+  priority: 40.5
+  prompts:
+  - What is the best AI tool for generating realistic AI photos for Instagram Reels?
+- id: ai-influencer--platform--reels
+  cluster: ai-influencer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-influencer
+    platform: reels
+  priority: 40.5
+  prompts:
+  - What is the best AI tool for creating an AI influencer for Instagram Reels?
+- id: lip-sync--platform--reels
+  cluster: lip-sync
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+    platform: reels
+  priority: 40.5
+  prompts:
+  - What is the best AI tool for lip-sync videos for Instagram Reels?
+- id: explainer--best
+  cluster: explainer
+  template: best
+  funnel: consideration
+  dims:
+    use_case: explainer
+  priority: 40.0
+  prompts:
+  - What is the best AI tool for explainer videos?
+- id: video-ads--persona--filmmaker
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: video-ads
+  priority: 40.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for creating video ads?
+- id: video-ads--persona-platform--dtc-founder--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: video-ads
+    platform: meta-ads
+  priority: 40.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--dtc-founder--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: video-ads
+    platform: tiktok
+  priority: 40.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating video ads on TikTok?
+- id: video-ads--persona-platform--performance-marketer--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: video-ads
+    platform: meta-ads
+  priority: 40.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--performance-marketer--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: video-ads
+    platform: tiktok
+  priority: 40.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating video ads on TikTok?
+- id: ugc-ads--alternatives--invideo
+  cluster: ugc-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: ugc-ads
+  priority: 39.9
+  prompts:
+  - What are the best alternatives to InVideo for creating UGC-style video ads?
+- id: music-video--persona--agency
+  cluster: music-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: music-video
+  priority: 39.6
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for making music videos?
+- id: ai-avatar--persona--smb
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ai-avatar
+  priority: 39.2
+  prompts:
+  - I'm a small business owner. What is the best AI tool for AI avatar and talking-head videos?
+- id: vfx-effects--platform--yt-shorts
+  cluster: vfx-effects
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+    platform: yt-shorts
+  priority: 39.0
+  prompts:
+  - What is the best AI tool for adding VFX and visual effects to videos for YouTube Shorts?
+- id: vfx-effects--alternatives--arcads
+  cluster: vfx-effects
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: vfx-effects
+  priority: 39.0
+  prompts:
+  - What are the best alternatives to Arcads for adding VFX and visual effects to videos?
+- id: vfx-effects--alternatives--creatify
+  cluster: vfx-effects
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: vfx-effects
+  priority: 39.0
+  prompts:
+  - What are the best alternatives to Creatify for adding VFX and visual effects to videos?
+- id: ai-avatar--free
+  cluster: ai-avatar
+  template: free
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+  priority: 38.5
+  prompts:
+  - What is the best free AI tool for AI avatar and talking-head videos?
+- id: ai-image--persona--creator
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ai-image
+  priority: 38.4
+  prompts:
+  - I'm a content creator. What is the best AI tool for generating realistic AI photos?
+- id: ai-image--persona--smm
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ai-image
+  priority: 38.4
+  prompts:
+  - I'm a social media manager. What is the best AI tool for generating realistic AI photos?
+- id: ai-influencer--persona--creator
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ai-influencer
+  priority: 38.4
+  prompts:
+  - I'm a content creator. What is the best AI tool for creating an AI influencer?
+- id: ai-influencer--persona--smm
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ai-influencer
+  priority: 38.4
+  prompts:
+  - I'm a social media manager. What is the best AI tool for creating an AI influencer?
+- id: lip-sync--persona--creator
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: lip-sync
+  priority: 38.4
+  prompts:
+  - I'm a content creator. What is the best AI tool for lip-sync videos?
+- id: lip-sync--persona--smm
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: lip-sync
+  priority: 38.4
+  prompts:
+  - I'm a social media manager. What is the best AI tool for lip-sync videos?
+- id: social-shorts--alternatives--heygen
+  cluster: social-shorts
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: social-shorts
+  priority: 38.4
+  prompts:
+  - What are the best alternatives to HeyGen for making short-form social videos?
+- id: social-shorts--alternatives--runway
+  cluster: social-shorts
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: social-shorts
+  priority: 38.4
+  prompts:
+  - What are the best alternatives to Runway for making short-form social videos?
+- id: social-shorts--persona--youtuber
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: social-shorts
+  priority: 38.4
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for making short-form social videos?
+- id: image-to-video--platform--amazon
+  cluster: image-to-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+    platform: amazon
+  priority: 38.2
+  prompts:
+  - What is the best AI tool for image-to-video generation for Amazon product listings?
+- id: ugc-ads--persona-platform--dtc-founder--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 38.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--dtc-founder--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 38.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: ugc-ads--persona-platform--performance-marketer--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 38.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--performance-marketer--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 38.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: product-video--alternatives--invideo
+  cluster: product-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: product-video
+  priority: 37.8
+  prompts:
+  - What are the best alternatives to InVideo for turning product photos into videos?
+- id: music-video--platform--reels
+  cluster: music-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: music-video
+    platform: reels
+  priority: 37.1
+  prompts:
+  - What is the best AI tool for making music videos for Instagram Reels?
+- id: vfx-effects--persona--smb
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: vfx-effects
+  priority: 36.4
+  prompts:
+  - I'm a small business owner. What is the best AI tool for adding VFX and visual effects to videos?
+- id: product-video--persona-platform--dtc-founder--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: product-video
+    platform: meta-ads
+  priority: 36.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for turning product photos into videos on Facebook and Instagram
+    ads?
+- id: product-video--persona-platform--dtc-founder--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: product-video
+    platform: tiktok
+  priority: 36.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: product-video--persona-platform--performance-marketer--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: product-video
+    platform: meta-ads
+  priority: 36.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for turning product photos into videos on Facebook and Instagram
+    ads?
+- id: product-video--persona-platform--performance-marketer--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: product-video
+    platform: tiktok
+  priority: 36.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: social-shorts--howto
+  cluster: social-shorts
+  template: howto
+  funnel: awareness
+  dims:
+    use_case_object: social-shorts
+  priority: 36.0
+  prompts:
+  - How do I make viral short-form videos with AI?
+- id: social-shorts--platform--amazon
+  cluster: social-shorts
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+    platform: amazon
+  priority: 36.0
+  prompts:
+  - What is the best AI tool for making short-form social videos for Amazon product listings?
+- id: video-ads--persona-platform--agency--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: video-ads
+    platform: meta-ads
+  priority: 36.0
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--agency--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: video-ads
+    platform: tiktok
+  priority: 36.0
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating video ads on TikTok?
+- id: video-ads--persona-platform--dtc-founder--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: video-ads
+    platform: reels
+  priority: 36.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: video-ads--persona-platform--performance-marketer--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: video-ads
+    platform: reels
+  priority: 36.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: video-ads--persona-platform--shopify-seller--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: video-ads
+    platform: meta-ads
+  priority: 36.0
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--shopify-seller--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: video-ads
+    platform: tiktok
+  priority: 36.0
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating video ads on TikTok?
+- id: ai-image--alternatives--arcads
+  cluster: ai-image
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: ai-image
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Arcads for generating realistic AI photos?
+- id: ai-image--alternatives--creatify
+  cluster: ai-image
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: ai-image
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Creatify for generating realistic AI photos?
+- id: ai-image--platform--yt-shorts
+  cluster: ai-image
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-image
+    platform: yt-shorts
+  priority: 36.0
+  prompts:
+  - What is the best AI tool for generating realistic AI photos for YouTube Shorts?
+- id: ai-influencer--alternatives--arcads
+  cluster: ai-influencer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: ai-influencer
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Arcads for creating an AI influencer?
+- id: ai-influencer--alternatives--creatify
+  cluster: ai-influencer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: ai-influencer
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Creatify for creating an AI influencer?
+- id: ai-influencer--platform--yt-shorts
+  cluster: ai-influencer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-influencer
+    platform: yt-shorts
+  priority: 36.0
+  prompts:
+  - What is the best AI tool for creating an AI influencer for YouTube Shorts?
+- id: brand-content--alternatives--heygen
+  cluster: brand-content
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: brand-content
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to HeyGen for creating branded marketing videos?
+- id: brand-content--alternatives--runway
+  cluster: brand-content
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: brand-content
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Runway for creating branded marketing videos?
+- id: brand-content--persona--youtuber
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: brand-content
+  priority: 36.0
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for creating branded marketing videos?
+- id: cinematic-camera--alternatives--heygen
+  cluster: cinematic-camera
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: cinematic-camera
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to HeyGen for cinematic camera movements in AI video?
+- id: cinematic-camera--alternatives--runway
+  cluster: cinematic-camera
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: cinematic-camera
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Runway for cinematic camera movements in AI video?
+- id: cinematic-camera--persona--youtuber
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: cinematic-camera
+  priority: 36.0
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for cinematic camera movements in AI video?
+- id: lip-sync--alternatives--arcads
+  cluster: lip-sync
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: lip-sync
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Arcads for lip-sync videos?
+- id: lip-sync--alternatives--creatify
+  cluster: lip-sync
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: lip-sync
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Creatify for lip-sync videos?
+- id: lip-sync--platform--yt-shorts
+  cluster: lip-sync
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+    platform: yt-shorts
+  priority: 36.0
+  prompts:
+  - What is the best AI tool for lip-sync videos for YouTube Shorts?
+- id: video-ads--alternatives--synthesia
+  cluster: video-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: video-ads
+  priority: 36.0
+  prompts:
+  - What are the best alternatives to Synthesia for creating video ads?
+- id: vfx-effects--free
+  cluster: vfx-effects
+  template: free
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+  priority: 35.8
+  prompts:
+  - What is the best free AI tool for adding VFX and visual effects to videos?
+- id: image-to-video--alternatives--invideo
+  cluster: image-to-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: image-to-video
+  priority: 35.7
+  prompts:
+  - What are the best alternatives to InVideo for image-to-video generation?
+- id: music-video--persona--creator
+  cluster: music-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: music-video
+  priority: 35.2
+  prompts:
+  - I'm a content creator. What is the best AI tool for making music videos?
+- id: music-video--persona--smm
+  cluster: music-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: music-video
+  priority: 35.2
+  prompts:
+  - I'm a social media manager. What is the best AI tool for making music videos?
+- id: ugc-ads--persona-platform--agency--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 34.2
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--agency--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 34.2
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: ugc-ads--persona-platform--dtc-founder--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ugc-ads
+    platform: reels
+  priority: 34.2
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: ugc-ads--persona-platform--performance-marketer--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ugc-ads
+    platform: reels
+  priority: 34.2
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: ugc-ads--persona-platform--shopify-seller--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 34.2
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--shopify-seller--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 34.2
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: ugc-ads--alternatives--synthesia
+  cluster: ugc-ads
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: ugc-ads
+  priority: 34.2
+  prompts:
+  - What are the best alternatives to Synthesia for creating UGC-style video ads?
+- id: image-to-video--persona--filmmaker
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: image-to-video
+  priority: 34.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for image-to-video generation?
+- id: image-to-video--persona-platform--dtc-founder--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 34.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--dtc-founder--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: image-to-video
+    platform: tiktok
+  priority: 34.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for image-to-video generation on TikTok?
+- id: image-to-video--persona-platform--performance-marketer--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 34.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--performance-marketer--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: image-to-video
+    platform: tiktok
+  priority: 34.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for image-to-video generation on TikTok?
+- id: cinematic-camera--howto
+  cluster: cinematic-camera
+  template: howto
+  funnel: awareness
+  dims:
+    use_case_object: cinematic-camera
+  priority: 33.8
+  prompts:
+  - How do I make cinematic shots with AI?
+- id: brand-content--platform--amazon
+  cluster: brand-content
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: brand-content
+    platform: amazon
+  priority: 33.8
+  prompts:
+  - What is the best AI tool for creating branded marketing videos for Amazon product listings?
+- id: cinematic-camera--platform--amazon
+  cluster: cinematic-camera
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: cinematic-camera
+    platform: amazon
+  priority: 33.8
+  prompts:
+  - What is the best AI tool for cinematic camera movements in AI video for Amazon product listings?
+- id: social-shorts--alternatives--invideo
+  cluster: social-shorts
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: social-shorts
+  priority: 33.6
+  prompts:
+  - What are the best alternatives to InVideo for making short-form social videos?
+- id: ai-avatar--alternatives--heygen
+  cluster: ai-avatar
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: ai-avatar
+  priority: 33.6
+  prompts:
+  - What are the best alternatives to HeyGen for AI avatar and talking-head videos?
+- id: ai-avatar--alternatives--runway
+  cluster: ai-avatar
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: ai-avatar
+  priority: 33.6
+  prompts:
+  - What are the best alternatives to Runway for AI avatar and talking-head videos?
+- id: ai-avatar--persona--youtuber
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: ai-avatar
+  priority: 33.6
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for AI avatar and talking-head videos?
+- id: ai-image--persona--smb
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ai-image
+  priority: 33.6
+  prompts:
+  - I'm a small business owner. What is the best AI tool for generating realistic AI photos?
+- id: ai-influencer--persona--smb
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ai-influencer
+  priority: 33.6
+  prompts:
+  - I'm a small business owner. What is the best AI tool for creating an AI influencer?
+- id: lip-sync--persona--smb
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: lip-sync
+  priority: 33.6
+  prompts:
+  - I'm a small business owner. What is the best AI tool for lip-sync videos?
+- id: music-video--platform--yt-shorts
+  cluster: music-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: music-video
+    platform: yt-shorts
+  priority: 33.0
+  prompts:
+  - What is the best AI tool for making music videos for YouTube Shorts?
+- id: ai-image--free
+  cluster: ai-image
+  template: free
+  funnel: consideration
+  dims:
+    use_case: ai-image
+  priority: 33.0
+  prompts:
+  - What is the best free AI tool for generating realistic AI photos?
+- id: ai-influencer--free
+  cluster: ai-influencer
+  template: free
+  funnel: consideration
+  dims:
+    use_case: ai-influencer
+  priority: 33.0
+  prompts:
+  - What is the best free AI tool for creating an AI influencer?
+- id: lip-sync--free
+  cluster: lip-sync
+  template: free
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+  priority: 33.0
+  prompts:
+  - What is the best free AI tool for lip-sync videos?
+- id: music-video--alternatives--arcads
+  cluster: music-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: music-video
+  priority: 33.0
+  prompts:
+  - What are the best alternatives to Arcads for making music videos?
+- id: music-video--alternatives--creatify
+  cluster: music-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: music-video
+  priority: 33.0
+  prompts:
+  - What are the best alternatives to Creatify for making music videos?
+- id: film-previs--persona--agency
+  cluster: film-previs
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: film-previs
+  priority: 32.4
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for film pre-visualization and storyboards?
+- id: product-video--persona-platform--agency--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: product-video
+    platform: meta-ads
+  priority: 32.4
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for turning product photos into videos on Facebook and Instagram
+    ads?
+- id: product-video--persona-platform--agency--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: product-video
+    platform: tiktok
+  priority: 32.4
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: product-video--persona-platform--dtc-founder--reels
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: product-video
+    platform: reels
+  priority: 32.4
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for turning product photos into videos on Instagram Reels?
+- id: product-video--persona-platform--performance-marketer--reels
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: product-video
+    platform: reels
+  priority: 32.4
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for turning product photos into videos on Instagram Reels?
+- id: product-video--persona-platform--shopify-seller--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: product-video
+    platform: meta-ads
+  priority: 32.4
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for turning product photos into videos on Facebook and Instagram ads?
+- id: product-video--persona-platform--shopify-seller--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: product-video
+    platform: tiktok
+  priority: 32.4
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: video-ads--persona-platform--agency--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: video-ads
+    platform: reels
+  priority: 32.4
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: video-ads--persona-platform--shopify-seller--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: video-ads
+    platform: reels
+  priority: 32.4
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: product-video--alternatives--synthesia
+  cluster: product-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: product-video
+  priority: 32.4
+  prompts:
+  - What are the best alternatives to Synthesia for turning product photos into videos?
+- id: explainer--persona--dtc-founder
+  cluster: explainer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: explainer
+  priority: 32.0
+  prompts:
+  - I'm a DTC e-commerce founder. What is the best AI tool for explainer videos?
+- id: explainer--persona--performance-marketer
+  cluster: explainer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: explainer
+  priority: 32.0
+  prompts:
+  - I'm a performance marketer. What is the best AI tool for explainer videos?
+- id: social-shorts--persona--filmmaker
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: social-shorts
+  priority: 32.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for making short-form social videos?
+- id: social-shorts--persona-platform--dtc-founder--meta-ads
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 32.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for making short-form social videos on Facebook and Instagram
+    ads?
+- id: social-shorts--persona-platform--dtc-founder--tiktok
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: social-shorts
+    platform: tiktok
+  priority: 32.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for making short-form social videos on TikTok?
+- id: social-shorts--persona-platform--performance-marketer--meta-ads
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 32.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for making short-form social videos on Facebook and Instagram ads?
+- id: social-shorts--persona-platform--performance-marketer--tiktok
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: social-shorts
+    platform: tiktok
+  priority: 32.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for making short-form social videos on TikTok?
+- id: video-ads--persona--musician
+  cluster: video-ads
+  template: persona
+  funnel: consideration
+  dims:
+    persona: musician
+    use_case: video-ads
+  priority: 32.0
+  prompts:
+  - I'm a musician. What is the best AI tool for creating video ads?
+- id: video-ads--persona-platform--creator--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: video-ads
+    platform: meta-ads
+  priority: 32.0
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--creator--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: video-ads
+    platform: tiktok
+  priority: 32.0
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating video ads on TikTok?
+- id: video-ads--persona-platform--dtc-founder--yt-shorts
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 32.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating video ads on YouTube Shorts?
+- id: video-ads--persona-platform--performance-marketer--yt-shorts
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 32.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating video ads on YouTube Shorts?
+- id: video-ads--persona-platform--smm--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: video-ads
+    platform: meta-ads
+  priority: 32.0
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--smm--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: video-ads
+    platform: tiktok
+  priority: 32.0
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating video ads on TikTok?
+- id: brand-content--alternatives--invideo
+  cluster: brand-content
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: brand-content
+  priority: 31.5
+  prompts:
+  - What are the best alternatives to InVideo for creating branded marketing videos?
+- id: cinematic-camera--alternatives--invideo
+  cluster: cinematic-camera
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: cinematic-camera
+  priority: 31.5
+  prompts:
+  - What are the best alternatives to InVideo for cinematic camera movements in AI video?
+- id: ai-avatar--platform--amazon
+  cluster: ai-avatar
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-avatar
+    platform: amazon
+  priority: 31.5
+  prompts:
+  - What is the best AI tool for AI avatar and talking-head videos for Amazon product listings?
+- id: vfx-effects--alternatives--heygen
+  cluster: vfx-effects
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: vfx-effects
+  priority: 31.2
+  prompts:
+  - What are the best alternatives to HeyGen for adding VFX and visual effects to videos?
+- id: vfx-effects--alternatives--runway
+  cluster: vfx-effects
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: vfx-effects
+  priority: 31.2
+  prompts:
+  - What are the best alternatives to Runway for adding VFX and visual effects to videos?
+- id: vfx-effects--persona--youtuber
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: vfx-effects
+  priority: 31.2
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for adding VFX and visual effects to videos?
+- id: music-video--persona--smb
+  cluster: music-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: music-video
+  priority: 30.8
+  prompts:
+  - I'm a small business owner. What is the best AI tool for making music videos?
+- id: ugc-ads--persona-platform--agency--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ugc-ads
+    platform: reels
+  priority: 30.8
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: ugc-ads--persona-platform--shopify-seller--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ugc-ads
+    platform: reels
+  priority: 30.8
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: image-to-video--persona-platform--agency--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 30.6
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--agency--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: image-to-video
+    platform: tiktok
+  priority: 30.6
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for image-to-video generation on TikTok?
+- id: image-to-video--persona-platform--dtc-founder--reels
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: image-to-video
+    platform: reels
+  priority: 30.6
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for image-to-video generation on Instagram Reels?
+- id: image-to-video--persona-platform--performance-marketer--reels
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: image-to-video
+    platform: reels
+  priority: 30.6
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for image-to-video generation on Instagram Reels?
+- id: image-to-video--persona-platform--shopify-seller--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 30.6
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--shopify-seller--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: image-to-video
+    platform: tiktok
+  priority: 30.6
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for image-to-video generation on TikTok?
+- id: image-to-video--alternatives--synthesia
+  cluster: image-to-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: image-to-video
+  priority: 30.6
+  prompts:
+  - What are the best alternatives to Synthesia for image-to-video generation?
+- id: ugc-ads--persona-platform--creator--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 30.4
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--creator--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 30.4
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: ugc-ads--persona-platform--dtc-founder--yt-shorts
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 30.4
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating UGC-style video ads on YouTube Shorts?
+- id: ugc-ads--persona-platform--performance-marketer--yt-shorts
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 30.4
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating UGC-style video ads on YouTube Shorts?
+- id: ugc-ads--persona-platform--smm--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 30.4
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--smm--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 30.4
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: film-previs--platform--reels
+  cluster: film-previs
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: film-previs
+    platform: reels
+  priority: 30.4
+  prompts:
+  - What is the best AI tool for film pre-visualization and storyboards for Instagram Reels?
+- id: music-video--free
+  cluster: music-video
+  template: free
+  funnel: consideration
+  dims:
+    use_case: music-video
+  priority: 30.3
+  prompts:
+  - What is the best free AI tool for making music videos?
+- id: brand-content--persona--filmmaker
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: brand-content
+  priority: 30.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for creating branded marketing videos?
+- id: brand-content--persona-platform--dtc-founder--meta-ads
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: brand-content
+    platform: meta-ads
+  priority: 30.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating branded marketing videos on Facebook and Instagram
+    ads?
+- id: brand-content--persona-platform--dtc-founder--tiktok
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: brand-content
+    platform: tiktok
+  priority: 30.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating branded marketing videos on TikTok?
+- id: brand-content--persona-platform--performance-marketer--meta-ads
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: brand-content
+    platform: meta-ads
+  priority: 30.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating branded marketing videos on Facebook and Instagram
+    ads?
+- id: brand-content--persona-platform--performance-marketer--tiktok
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: brand-content
+    platform: tiktok
+  priority: 30.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating branded marketing videos on TikTok?
+- id: cinematic-camera--persona--filmmaker
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: cinematic-camera
+  priority: 30.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for cinematic camera movements in AI video?
+- id: cinematic-camera--persona-platform--dtc-founder--meta-ads
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 30.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for cinematic camera movements in AI video on Facebook and Instagram
+    ads?
+- id: cinematic-camera--persona-platform--dtc-founder--tiktok
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 30.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for cinematic camera movements in AI video on TikTok?
+- id: cinematic-camera--persona-platform--performance-marketer--meta-ads
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 30.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for cinematic camera movements in AI video on Facebook and Instagram
+    ads?
+- id: cinematic-camera--persona-platform--performance-marketer--tiktok
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 30.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for cinematic camera movements in AI video on TikTok?
+- id: explainer--platform--meta-ads
+  cluster: explainer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: explainer
+    platform: meta-ads
+  priority: 30.0
+  prompts:
+  - What is the best AI tool for explainer videos for Facebook and Instagram ads?
+- id: explainer--platform--tiktok
+  cluster: explainer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: explainer
+    platform: tiktok
+  priority: 30.0
+  prompts:
+  - What is the best AI tool for explainer videos for TikTok?
+- id: video-ads--platform--linkedin
+  cluster: video-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: video-ads
+    platform: linkedin
+  priority: 30.0
+  prompts:
+  - What is the best AI tool for creating video ads for LinkedIn?
+- id: ai-avatar--alternatives--invideo
+  cluster: ai-avatar
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: ai-avatar
+  priority: 29.4
+  prompts:
+  - What are the best alternatives to InVideo for AI avatar and talking-head videos?
+- id: vfx-effects--platform--amazon
+  cluster: vfx-effects
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: vfx-effects
+    platform: amazon
+  priority: 29.3
+  prompts:
+  - What is the best AI tool for adding VFX and visual effects to videos for Amazon product listings?
+- id: product-video--persona-platform--agency--reels
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: product-video
+    platform: reels
+  priority: 29.2
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for turning product photos into videos on Instagram Reels?
+- id: product-video--persona-platform--shopify-seller--reels
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: product-video
+    platform: reels
+  priority: 29.2
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for turning product photos into videos on Instagram Reels?
+- id: film-previs--persona--creator
+  cluster: film-previs
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: film-previs
+  priority: 28.8
+  prompts:
+  - I'm a content creator. What is the best AI tool for film pre-visualization and storyboards?
+- id: film-previs--persona--smm
+  cluster: film-previs
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: film-previs
+  priority: 28.8
+  prompts:
+  - I'm a social media manager. What is the best AI tool for film pre-visualization and storyboards?
+- id: product-video--persona-platform--creator--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: product-video
+    platform: meta-ads
+  priority: 28.8
+  prompts:
+  - I'm a content creator. Which AI tool should I use for turning product photos into videos on Facebook and Instagram ads?
+- id: product-video--persona-platform--creator--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: product-video
+    platform: tiktok
+  priority: 28.8
+  prompts:
+  - I'm a content creator. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: product-video--persona-platform--smm--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: product-video
+    platform: meta-ads
+  priority: 28.8
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for turning product photos into videos on Facebook and Instagram
+    ads?
+- id: product-video--persona-platform--smm--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: product-video
+    platform: tiktok
+  priority: 28.8
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: social-shorts--persona-platform--dtc-founder--reels
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: social-shorts
+    platform: reels
+  priority: 28.8
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for making short-form social videos on Instagram Reels?
+- id: social-shorts--persona-platform--performance-marketer--reels
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: social-shorts
+    platform: reels
+  priority: 28.8
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for making short-form social videos on Instagram Reels?
+- id: video-ads--persona-platform--creator--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: video-ads
+    platform: reels
+  priority: 28.8
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: video-ads--persona-platform--smm--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: video-ads
+    platform: reels
+  priority: 28.8
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: explainer--persona--agency
+  cluster: explainer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: explainer
+  priority: 28.8
+  prompts:
+  - I'm a marketing agency owner. What is the best AI tool for explainer videos?
+- id: explainer--persona--shopify-seller
+  cluster: explainer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: explainer
+  priority: 28.8
+  prompts:
+  - I'm a Shopify seller. What is the best AI tool for explainer videos?
+- id: product-video--persona-platform--dtc-founder--yt-shorts
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: product-video
+    platform: yt-shorts
+  priority: 28.8
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for turning product photos into videos on YouTube Shorts?
+- id: product-video--persona-platform--performance-marketer--yt-shorts
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: product-video
+    platform: yt-shorts
+  priority: 28.8
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for turning product photos into videos on YouTube Shorts?
+- id: social-shorts--persona-platform--agency--meta-ads
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 28.8
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for making short-form social videos on Facebook and Instagram
+    ads?
+- id: social-shorts--persona-platform--agency--tiktok
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: social-shorts
+    platform: tiktok
+  priority: 28.8
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for making short-form social videos on TikTok?
+- id: social-shorts--persona-platform--shopify-seller--meta-ads
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 28.8
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for making short-form social videos on Facebook and Instagram ads?
+- id: social-shorts--persona-platform--shopify-seller--tiktok
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: social-shorts
+    platform: tiktok
+  priority: 28.8
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for making short-form social videos on TikTok?
+- id: video-ads--persona-platform--agency--yt-shorts
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 28.8
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating video ads on YouTube Shorts?
+- id: video-ads--persona-platform--shopify-seller--yt-shorts
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 28.8
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating video ads on YouTube Shorts?
+- id: ai-image--alternatives--heygen
+  cluster: ai-image
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: ai-image
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to HeyGen for generating realistic AI photos?
+- id: ai-image--alternatives--runway
+  cluster: ai-image
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: ai-image
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to Runway for generating realistic AI photos?
+- id: ai-image--persona--youtuber
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: ai-image
+  priority: 28.8
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for generating realistic AI photos?
+- id: ai-influencer--alternatives--heygen
+  cluster: ai-influencer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: ai-influencer
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to HeyGen for creating an AI influencer?
+- id: ai-influencer--alternatives--runway
+  cluster: ai-influencer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: ai-influencer
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to Runway for creating an AI influencer?
+- id: ai-influencer--persona--youtuber
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: ai-influencer
+  priority: 28.8
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for creating an AI influencer?
+- id: lip-sync--alternatives--heygen
+  cluster: lip-sync
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: lip-sync
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to HeyGen for lip-sync videos?
+- id: lip-sync--alternatives--runway
+  cluster: lip-sync
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: lip-sync
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to Runway for lip-sync videos?
+- id: lip-sync--persona--youtuber
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: lip-sync
+  priority: 28.8
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for lip-sync videos?
+- id: social-shorts--alternatives--synthesia
+  cluster: social-shorts
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: social-shorts
+  priority: 28.8
+  prompts:
+  - What are the best alternatives to Synthesia for making short-form social videos?
+- id: ugc-ads--platform--linkedin
+  cluster: ugc-ads
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ugc-ads
+    platform: linkedin
+  priority: 28.5
+  prompts:
+  - What is the best AI tool for creating UGC-style video ads for LinkedIn?
+- id: ai-avatar--persona--filmmaker
+  cluster: ai-avatar
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: ai-avatar
+  priority: 28.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for AI avatar and talking-head videos?
+- id: ai-avatar--persona-platform--dtc-founder--meta-ads
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-avatar
+    platform: meta-ads
+  priority: 28.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for AI avatar and talking-head videos on Facebook and Instagram
+    ads?
+- id: ai-avatar--persona-platform--dtc-founder--tiktok
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-avatar
+    platform: tiktok
+  priority: 28.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for AI avatar and talking-head videos on TikTok?
+- id: ai-avatar--persona-platform--performance-marketer--meta-ads
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-avatar
+    platform: meta-ads
+  priority: 28.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for AI avatar and talking-head videos on Facebook and Instagram
+    ads?
+- id: ai-avatar--persona-platform--performance-marketer--tiktok
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-avatar
+    platform: tiktok
+  priority: 28.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for AI avatar and talking-head videos on TikTok?
+- id: video-ads--persona-platform--smb--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: video-ads
+    platform: meta-ads
+  priority: 28.0
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--smb--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: video-ads
+    platform: tiktok
+  priority: 28.0
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for creating video ads on TikTok?
+- id: image-to-video--persona-platform--agency--reels
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: image-to-video
+    platform: reels
+  priority: 27.5
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for image-to-video generation on Instagram Reels?
+- id: image-to-video--persona-platform--shopify-seller--reels
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: image-to-video
+    platform: reels
+  priority: 27.5
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for image-to-video generation on Instagram Reels?
+- id: ugc-ads--persona-platform--creator--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ugc-ads
+    platform: reels
+  priority: 27.4
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: ugc-ads--persona-platform--smm--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ugc-ads
+    platform: reels
+  priority: 27.4
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: ugc-ads--persona-platform--agency--yt-shorts
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 27.4
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating UGC-style video ads on YouTube Shorts?
+- id: ugc-ads--persona-platform--shopify-seller--yt-shorts
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 27.4
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating UGC-style video ads on YouTube Shorts?
+- id: vfx-effects--alternatives--invideo
+  cluster: vfx-effects
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: vfx-effects
+  priority: 27.3
+  prompts:
+  - What are the best alternatives to InVideo for adding VFX and visual effects to videos?
+- id: image-to-video--persona--musician
+  cluster: image-to-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: musician
+    use_case: image-to-video
+  priority: 27.2
+  prompts:
+  - I'm a musician. What is the best AI tool for image-to-video generation?
+- id: image-to-video--persona-platform--creator--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 27.2
+  prompts:
+  - I'm a content creator. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--creator--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: image-to-video
+    platform: tiktok
+  priority: 27.2
+  prompts:
+  - I'm a content creator. Which AI tool should I use for image-to-video generation on TikTok?
+- id: image-to-video--persona-platform--dtc-founder--yt-shorts
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: image-to-video
+    platform: yt-shorts
+  priority: 27.2
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for image-to-video generation on YouTube Shorts?
+- id: image-to-video--persona-platform--performance-marketer--yt-shorts
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: image-to-video
+    platform: yt-shorts
+  priority: 27.2
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for image-to-video generation on YouTube Shorts?
+- id: image-to-video--persona-platform--smm--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 27.2
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--smm--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: image-to-video
+    platform: tiktok
+  priority: 27.2
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for image-to-video generation on TikTok?
+- id: brand-content--persona-platform--dtc-founder--reels
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: brand-content
+    platform: reels
+  priority: 27.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating branded marketing videos on Instagram Reels?
+- id: brand-content--persona-platform--performance-marketer--reels
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: brand-content
+    platform: reels
+  priority: 27.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating branded marketing videos on Instagram Reels?
+- id: cinematic-camera--persona-platform--dtc-founder--reels
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: cinematic-camera
+    platform: reels
+  priority: 27.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for cinematic camera movements in AI video on Instagram Reels?
+- id: cinematic-camera--persona-platform--performance-marketer--reels
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: cinematic-camera
+    platform: reels
+  priority: 27.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for cinematic camera movements in AI video on Instagram Reels?
+- id: explainer--platform--reels
+  cluster: explainer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: explainer
+    platform: reels
+  priority: 27.0
+  prompts:
+  - What is the best AI tool for explainer videos for Instagram Reels?
+- id: brand-content--alternatives--synthesia
+  cluster: brand-content
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: brand-content
+  priority: 27.0
+  prompts:
+  - What are the best alternatives to Synthesia for creating branded marketing videos?
+- id: brand-content--persona-platform--agency--meta-ads
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: brand-content
+    platform: meta-ads
+  priority: 27.0
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating branded marketing videos on Facebook and Instagram
+    ads?
+- id: brand-content--persona-platform--agency--tiktok
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: brand-content
+    platform: tiktok
+  priority: 27.0
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating branded marketing videos on TikTok?
+- id: brand-content--persona-platform--shopify-seller--meta-ads
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: brand-content
+    platform: meta-ads
+  priority: 27.0
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating branded marketing videos on Facebook and Instagram ads?
+- id: brand-content--persona-platform--shopify-seller--tiktok
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: brand-content
+    platform: tiktok
+  priority: 27.0
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating branded marketing videos on TikTok?
+- id: cinematic-camera--alternatives--synthesia
+  cluster: cinematic-camera
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: cinematic-camera
+  priority: 27.0
+  prompts:
+  - What are the best alternatives to Synthesia for cinematic camera movements in AI video?
+- id: cinematic-camera--persona-platform--agency--meta-ads
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 27.0
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for cinematic camera movements in AI video on Facebook and Instagram
+    ads?
+- id: cinematic-camera--persona-platform--agency--tiktok
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 27.0
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for cinematic camera movements in AI video on TikTok?
+- id: cinematic-camera--persona-platform--shopify-seller--meta-ads
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 27.0
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for cinematic camera movements in AI video on Facebook and Instagram
+    ads?
+- id: cinematic-camera--persona-platform--shopify-seller--tiktok
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 27.0
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for cinematic camera movements in AI video on TikTok?
+- id: film-previs--alternatives--arcads
+  cluster: film-previs
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: film-previs
+  priority: 27.0
+  prompts:
+  - What are the best alternatives to Arcads for film pre-visualization and storyboards?
+- id: film-previs--alternatives--creatify
+  cluster: film-previs
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: film-previs
+  priority: 27.0
+  prompts:
+  - What are the best alternatives to Creatify for film pre-visualization and storyboards?
+- id: film-previs--platform--yt-shorts
+  cluster: film-previs
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: film-previs
+    platform: yt-shorts
+  priority: 27.0
+  prompts:
+  - What is the best AI tool for film pre-visualization and storyboards for YouTube Shorts?
+- id: product-video--platform--linkedin
+  cluster: product-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: product-video
+    platform: linkedin
+  priority: 27.0
+  prompts:
+  - What is the best AI tool for turning product photos into videos for LinkedIn?
+- id: ai-image--platform--amazon
+  cluster: ai-image
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: ai-image
+    platform: amazon
+  priority: 27.0
+  prompts:
+  - What is the best AI tool for generating realistic AI photos for Amazon product listings?
+- id: lip-sync--platform--amazon
+  cluster: lip-sync
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: lip-sync
+    platform: amazon
+  priority: 27.0
+  prompts:
+  - What is the best AI tool for lip-sync videos for Amazon product listings?
+- id: ugc-ads--persona-platform--smb--meta-ads
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ugc-ads
+    platform: meta-ads
+  priority: 26.6
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for creating UGC-style video ads on Facebook and Instagram ads?
+- id: ugc-ads--persona-platform--smb--tiktok
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ugc-ads
+    platform: tiktok
+  priority: 26.6
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for creating UGC-style video ads on TikTok?
+- id: music-video--alternatives--heygen
+  cluster: music-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: heygen
+    use_case: music-video
+  priority: 26.4
+  prompts:
+  - What are the best alternatives to HeyGen for making music videos?
+- id: music-video--alternatives--runway
+  cluster: music-video
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: runway
+    use_case: music-video
+  priority: 26.4
+  prompts:
+  - What are the best alternatives to Runway for making music videos?
+- id: music-video--persona--youtuber
+  cluster: music-video
+  template: persona
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: music-video
+  priority: 26.4
+  prompts:
+  - I'm a YouTuber. What is the best AI tool for making music videos?
+- id: vfx-effects--persona--filmmaker
+  cluster: vfx-effects
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: vfx-effects
+  priority: 26.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for adding VFX and visual effects to videos?
+- id: vfx-effects--persona-platform--dtc-founder--meta-ads
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: vfx-effects
+    platform: meta-ads
+  priority: 26.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for adding VFX and visual effects to videos on Facebook and Instagram
+    ads?
+- id: vfx-effects--persona-platform--dtc-founder--tiktok
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: vfx-effects
+    platform: tiktok
+  priority: 26.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for adding VFX and visual effects to videos on TikTok?
+- id: vfx-effects--persona-platform--performance-marketer--meta-ads
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: vfx-effects
+    platform: meta-ads
+  priority: 26.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for adding VFX and visual effects to videos on Facebook and Instagram
+    ads?
+- id: vfx-effects--persona-platform--performance-marketer--tiktok
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: vfx-effects
+    platform: tiktok
+  priority: 26.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for adding VFX and visual effects to videos on TikTok?
+- id: product-video--persona-platform--creator--reels
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: product-video
+    platform: reels
+  priority: 25.9
+  prompts:
+  - I'm a content creator. Which AI tool should I use for turning product photos into videos on Instagram Reels?
+- id: product-video--persona-platform--smm--reels
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: product-video
+    platform: reels
+  priority: 25.9
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for turning product photos into videos on Instagram Reels?
+- id: product-video--persona-platform--agency--yt-shorts
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: product-video
+    platform: yt-shorts
+  priority: 25.9
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for turning product photos into videos on YouTube Shorts?
+- id: product-video--persona-platform--shopify-seller--yt-shorts
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: product-video
+    platform: yt-shorts
+  priority: 25.9
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for turning product photos into videos on YouTube Shorts?
+- id: social-shorts--persona-platform--agency--reels
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: social-shorts
+    platform: reels
+  priority: 25.9
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for making short-form social videos on Instagram Reels?
+- id: social-shorts--persona-platform--shopify-seller--reels
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: social-shorts
+    platform: reels
+  priority: 25.9
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for making short-form social videos on Instagram Reels?
+- id: explainer--persona--creator
+  cluster: explainer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: explainer
+  priority: 25.6
+  prompts:
+  - I'm a content creator. What is the best AI tool for explainer videos?
+- id: explainer--persona--smm
+  cluster: explainer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: explainer
+  priority: 25.6
+  prompts:
+  - I'm a social media manager. What is the best AI tool for explainer videos?
+- id: social-shorts--persona--musician
+  cluster: social-shorts
+  template: persona
+  funnel: consideration
+  dims:
+    persona: musician
+    use_case: social-shorts
+  priority: 25.6
+  prompts:
+  - I'm a musician. What is the best AI tool for making short-form social videos?
+- id: social-shorts--persona-platform--creator--meta-ads
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 25.6
+  prompts:
+  - I'm a content creator. Which AI tool should I use for making short-form social videos on Facebook and Instagram ads?
+- id: social-shorts--persona-platform--creator--tiktok
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: social-shorts
+    platform: tiktok
+  priority: 25.6
+  prompts:
+  - I'm a content creator. Which AI tool should I use for making short-form social videos on TikTok?
+- id: social-shorts--persona-platform--dtc-founder--yt-shorts
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: social-shorts
+    platform: yt-shorts
+  priority: 25.6
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for making short-form social videos on YouTube Shorts?
+- id: social-shorts--persona-platform--performance-marketer--yt-shorts
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: social-shorts
+    platform: yt-shorts
+  priority: 25.6
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for making short-form social videos on YouTube Shorts?
+- id: social-shorts--persona-platform--smm--meta-ads
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: social-shorts
+    platform: meta-ads
+  priority: 25.6
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for making short-form social videos on Facebook and Instagram ads?
+- id: social-shorts--persona-platform--smm--tiktok
+  cluster: social-shorts
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: social-shorts
+    platform: tiktok
+  priority: 25.6
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for making short-form social videos on TikTok?
+- id: video-ads--persona-platform--creator--yt-shorts
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 25.6
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating video ads on YouTube Shorts?
+- id: video-ads--persona-platform--smm--yt-shorts
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: video-ads
+    platform: yt-shorts
+  priority: 25.6
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating video ads on YouTube Shorts?
+- id: image-to-video--platform--linkedin
+  cluster: image-to-video
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: image-to-video
+    platform: linkedin
+  priority: 25.5
+  prompts:
+  - What is the best AI tool for image-to-video generation for LinkedIn?
+- id: ai-avatar--alternatives--synthesia
+  cluster: ai-avatar
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: synthesia
+    use_case: ai-avatar
+  priority: 25.2
+  prompts:
+  - What are the best alternatives to Synthesia for AI avatar and talking-head videos?
+- id: ai-avatar--persona-platform--agency--meta-ads
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ai-avatar
+    platform: meta-ads
+  priority: 25.2
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for AI avatar and talking-head videos on Facebook and Instagram
+    ads?
+- id: ai-avatar--persona-platform--agency--tiktok
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: ai-avatar
+    platform: tiktok
+  priority: 25.2
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for AI avatar and talking-head videos on TikTok?
+- id: ai-avatar--persona-platform--dtc-founder--reels
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-avatar
+    platform: reels
+  priority: 25.2
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for AI avatar and talking-head videos on Instagram Reels?
+- id: ai-avatar--persona-platform--performance-marketer--reels
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-avatar
+    platform: reels
+  priority: 25.2
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for AI avatar and talking-head videos on Instagram Reels?
+- id: ai-avatar--persona-platform--shopify-seller--meta-ads
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ai-avatar
+    platform: meta-ads
+  priority: 25.2
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for AI avatar and talking-head videos on Facebook and Instagram ads?
+- id: ai-avatar--persona-platform--shopify-seller--tiktok
+  cluster: ai-avatar
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: ai-avatar
+    platform: tiktok
+  priority: 25.2
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for AI avatar and talking-head videos on TikTok?
+- id: ai-image--alternatives--invideo
+  cluster: ai-image
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: ai-image
+  priority: 25.2
+  prompts:
+  - What are the best alternatives to InVideo for generating realistic AI photos?
+- id: ai-influencer--alternatives--invideo
+  cluster: ai-influencer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: ai-influencer
+  priority: 25.2
+  prompts:
+  - What are the best alternatives to InVideo for creating an AI influencer?
+- id: film-previs--persona--smb
+  cluster: film-previs
+  template: persona
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: film-previs
+  priority: 25.2
+  prompts:
+  - I'm a small business owner. What is the best AI tool for film pre-visualization and storyboards?
+- id: lip-sync--alternatives--invideo
+  cluster: lip-sync
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: invideo
+    use_case: lip-sync
+  priority: 25.2
+  prompts:
+  - What are the best alternatives to InVideo for lip-sync videos?
+- id: product-video--persona-platform--smb--meta-ads
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: product-video
+    platform: meta-ads
+  priority: 25.2
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for turning product photos into videos on Facebook and Instagram
+    ads?
+- id: product-video--persona-platform--smb--tiktok
+  cluster: product-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: product-video
+    platform: tiktok
+  priority: 25.2
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for turning product photos into videos on TikTok?
+- id: video-ads--persona-platform--smb--reels
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: video-ads
+    platform: reels
+  priority: 25.2
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for creating video ads on Instagram Reels?
+- id: film-previs--free
+  cluster: film-previs
+  template: free
+  funnel: consideration
+  dims:
+    use_case: film-previs
+  priority: 24.8
+  prompts:
+  - What is the best free AI tool for film pre-visualization and storyboards?
+- id: music-video--howto
+  cluster: music-video
+  template: howto
+  funnel: awareness
+  dims:
+    use_case_object: music-video
+  priority: 24.8
+  prompts:
+  - How do I make a music video with AI?
+- id: image-to-video--persona-platform--agency--yt-shorts
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: image-to-video
+    platform: yt-shorts
+  priority: 24.5
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for image-to-video generation on YouTube Shorts?
+- id: image-to-video--persona-platform--shopify-seller--yt-shorts
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: image-to-video
+    platform: yt-shorts
+  priority: 24.5
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for image-to-video generation on YouTube Shorts?
+- id: image-to-video--persona-platform--creator--reels
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: image-to-video
+    platform: reels
+  priority: 24.5
+  prompts:
+  - I'm a content creator. Which AI tool should I use for image-to-video generation on Instagram Reels?
+- id: image-to-video--persona-platform--smm--reels
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: image-to-video
+    platform: reels
+  priority: 24.5
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for image-to-video generation on Instagram Reels?
+- id: ugc-ads--persona-platform--creator--yt-shorts
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 24.3
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating UGC-style video ads on YouTube Shorts?
+- id: ugc-ads--persona-platform--smm--yt-shorts
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: ugc-ads
+    platform: yt-shorts
+  priority: 24.3
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating UGC-style video ads on YouTube Shorts?
+- id: brand-content--persona-platform--agency--reels
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: brand-content
+    platform: reels
+  priority: 24.3
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for creating branded marketing videos on Instagram Reels?
+- id: brand-content--persona-platform--shopify-seller--reels
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: brand-content
+    platform: reels
+  priority: 24.3
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for creating branded marketing videos on Instagram Reels?
+- id: cinematic-camera--persona-platform--agency--reels
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: cinematic-camera
+    platform: reels
+  priority: 24.3
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for cinematic camera movements in AI video on Instagram Reels?
+- id: cinematic-camera--persona-platform--shopify-seller--reels
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: cinematic-camera
+    platform: reels
+  priority: 24.3
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for cinematic camera movements in AI video on Instagram Reels?
+- id: brand-content--persona--musician
+  cluster: brand-content
+  template: persona
+  funnel: consideration
+  dims:
+    persona: musician
+    use_case: brand-content
+  priority: 24.0
+  prompts:
+  - I'm a musician. What is the best AI tool for creating branded marketing videos?
+- id: brand-content--persona-platform--creator--meta-ads
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: brand-content
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating branded marketing videos on Facebook and Instagram ads?
+- id: brand-content--persona-platform--creator--tiktok
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: brand-content
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a content creator. Which AI tool should I use for creating branded marketing videos on TikTok?
+- id: brand-content--persona-platform--dtc-founder--yt-shorts
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: brand-content
+    platform: yt-shorts
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating branded marketing videos on YouTube Shorts?
+- id: brand-content--persona-platform--performance-marketer--yt-shorts
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: brand-content
+    platform: yt-shorts
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating branded marketing videos on YouTube Shorts?
+- id: brand-content--persona-platform--smm--meta-ads
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: brand-content
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating branded marketing videos on Facebook and Instagram
+    ads?
+- id: brand-content--persona-platform--smm--tiktok
+  cluster: brand-content
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: brand-content
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for creating branded marketing videos on TikTok?
+- id: cinematic-camera--persona--musician
+  cluster: cinematic-camera
+  template: persona
+  funnel: consideration
+  dims:
+    persona: musician
+    use_case: cinematic-camera
+  priority: 24.0
+  prompts:
+  - I'm a musician. What is the best AI tool for cinematic camera movements in AI video?
+- id: cinematic-camera--persona-platform--creator--meta-ads
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a content creator. Which AI tool should I use for cinematic camera movements in AI video on Facebook and Instagram
+    ads?
+- id: cinematic-camera--persona-platform--creator--tiktok
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: creator
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a content creator. Which AI tool should I use for cinematic camera movements in AI video on TikTok?
+- id: cinematic-camera--persona-platform--dtc-founder--yt-shorts
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: cinematic-camera
+    platform: yt-shorts
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for cinematic camera movements in AI video on YouTube Shorts?
+- id: cinematic-camera--persona-platform--performance-marketer--yt-shorts
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: cinematic-camera
+    platform: yt-shorts
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for cinematic camera movements in AI video on YouTube Shorts?
+- id: cinematic-camera--persona-platform--smm--meta-ads
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: cinematic-camera
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for cinematic camera movements in AI video on Facebook and Instagram
+    ads?
+- id: cinematic-camera--persona-platform--smm--tiktok
+  cluster: cinematic-camera
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smm
+    use_case: cinematic-camera
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a social media manager. Which AI tool should I use for cinematic camera movements in AI video on TikTok?
+- id: explainer--platform--yt-shorts
+  cluster: explainer
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: explainer
+    platform: yt-shorts
+  priority: 24.0
+  prompts:
+  - What is the best AI tool for explainer videos for YouTube Shorts?
+- id: social-shorts--platform--linkedin
+  cluster: social-shorts
+  template: platform
+  funnel: consideration
+  dims:
+    use_case: social-shorts
+    platform: linkedin
+  priority: 24.0
+  prompts:
+  - What is the best AI tool for making short-form social videos for LinkedIn?
+- id: ai-image--persona--filmmaker
+  cluster: ai-image
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: ai-image
+  priority: 24.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for generating realistic AI photos?
+- id: ai-image--persona-platform--dtc-founder--meta-ads
+  cluster: ai-image
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-image
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for generating realistic AI photos on Facebook and Instagram
+    ads?
+- id: ai-image--persona-platform--dtc-founder--tiktok
+  cluster: ai-image
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-image
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for generating realistic AI photos on TikTok?
+- id: ai-image--persona-platform--performance-marketer--meta-ads
+  cluster: ai-image
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-image
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for generating realistic AI photos on Facebook and Instagram ads?
+- id: ai-image--persona-platform--performance-marketer--tiktok
+  cluster: ai-image
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-image
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for generating realistic AI photos on TikTok?
+- id: ai-influencer--persona--filmmaker
+  cluster: ai-influencer
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: ai-influencer
+  priority: 24.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for creating an AI influencer?
+- id: ai-influencer--persona-platform--dtc-founder--meta-ads
+  cluster: ai-influencer
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-influencer
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating an AI influencer on Facebook and Instagram ads?
+- id: ai-influencer--persona-platform--dtc-founder--tiktok
+  cluster: ai-influencer
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: ai-influencer
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating an AI influencer on TikTok?
+- id: ai-influencer--persona-platform--performance-marketer--meta-ads
+  cluster: ai-influencer
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-influencer
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating an AI influencer on Facebook and Instagram ads?
+- id: ai-influencer--persona-platform--performance-marketer--tiktok
+  cluster: ai-influencer
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: ai-influencer
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating an AI influencer on TikTok?
+- id: explainer--alternatives--arcads
+  cluster: explainer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: arcads
+    use_case: explainer
+  priority: 24.0
+  prompts:
+  - What are the best alternatives to Arcads for explainer videos?
+- id: explainer--alternatives--creatify
+  cluster: explainer
+  template: alternatives
+  funnel: decision
+  dims:
+    competitor: creatify
+    use_case: explainer
+  priority: 24.0
+  prompts:
+  - What are the best alternatives to Creatify for explainer videos?
+- id: lip-sync--persona--filmmaker
+  cluster: lip-sync
+  template: persona
+  funnel: consideration
+  dims:
+    persona: filmmaker
+    use_case: lip-sync
+  priority: 24.0
+  prompts:
+  - I'm a indie filmmaker. What is the best AI tool for lip-sync videos?
+- id: lip-sync--persona-platform--dtc-founder--meta-ads
+  cluster: lip-sync
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: lip-sync
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for lip-sync videos on Facebook and Instagram ads?
+- id: lip-sync--persona-platform--dtc-founder--tiktok
+  cluster: lip-sync
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: lip-sync
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for lip-sync videos on TikTok?
+- id: lip-sync--persona-platform--performance-marketer--meta-ads
+  cluster: lip-sync
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: lip-sync
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for lip-sync videos on Facebook and Instagram ads?
+- id: lip-sync--persona-platform--performance-marketer--tiktok
+  cluster: lip-sync
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: lip-sync
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for lip-sync videos on TikTok?
+- id: video-ads--persona-platform--dtc-founder--amazon
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: dtc-founder
+    use_case: video-ads
+    platform: amazon
+  priority: 24.0
+  prompts:
+  - I'm a DTC e-commerce founder. Which AI tool should I use for creating video ads on Amazon product listings?
+- id: video-ads--persona-platform--performance-marketer--amazon
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: performance-marketer
+    use_case: video-ads
+    platform: amazon
+  priority: 24.0
+  prompts:
+  - I'm a performance marketer. Which AI tool should I use for creating video ads on Amazon product listings?
+- id: video-ads--persona-platform--youtuber--meta-ads
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: video-ads
+    platform: meta-ads
+  priority: 24.0
+  prompts:
+  - I'm a YouTuber. Which AI tool should I use for creating video ads on Facebook and Instagram ads?
+- id: video-ads--persona-platform--youtuber--tiktok
+  cluster: video-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: youtuber
+    use_case: video-ads
+    platform: tiktok
+  priority: 24.0
+  prompts:
+  - I'm a YouTuber. Which AI tool should I use for creating video ads on TikTok?
+- id: ugc-ads--persona-platform--smb--reels
+  cluster: ugc-ads
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: ugc-ads
+    platform: reels
+  priority: 23.9
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for creating UGC-style video ads on Instagram Reels?
+- id: image-to-video--persona-platform--smb--meta-ads
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: image-to-video
+    platform: meta-ads
+  priority: 23.8
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for image-to-video generation on Facebook and Instagram ads?
+- id: image-to-video--persona-platform--smb--tiktok
+  cluster: image-to-video
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: smb
+    use_case: image-to-video
+    platform: tiktok
+  priority: 23.8
+  prompts:
+  - I'm a small business owner. Which AI tool should I use for image-to-video generation on TikTok?
+- id: vfx-effects--persona-platform--agency--meta-ads
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: vfx-effects
+    platform: meta-ads
+  priority: 23.4
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for adding VFX and visual effects to videos on Facebook and Instagram
+    ads?
+- id: vfx-effects--persona-platform--agency--tiktok
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: agency
+    use_case: vfx-effects
+    platform: tiktok
+  priority: 23.4
+  prompts:
+  - I'm a marketing agency owner. Which AI tool should I use for adding VFX and visual effects to videos on TikTok?
+- id: vfx-effects--persona-platform--shopify-seller--meta-ads
+  cluster: vfx-effects
+  template: persona-platform
+  funnel: consideration
+  dims:
+    persona: shopify-seller
+    use_case: vfx-effects
+    platform: meta-ads
+  priority: 23.4
+  prompts:
+  - I'm a Shopify seller. Which AI tool should I use for adding VFX and visual effects to videos on Facebook and Instagram
+    ads?

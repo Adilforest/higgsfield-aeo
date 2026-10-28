@@ -1,0 +1,17 @@
+# Perplexity. Evidence: docs/research/03-scaling.md (engine map, 2.2).
+campaign: higgsfield-video-ads-perplexity
+extends: shared.yaml
+intent_panel: config/intents/pilot.yaml
+engine_key: perplexity                  # Agent API (Sonar chat completions retired 2026-09-27)
+
+retrieval: "own index of hundreds of billions of pages; highest overlap with Google top 10 (28.6%)"
+bots:
+  allow: [PerplexityBot, Perplexity-User]   # PerplexityBot is not used for training
+source_bias: "Reddit 46.7% within top-10 domains (Profound); YouTube 16.1%, Wikipedia 12.5% (Ahrefs); strong freshness preference"
+
+delta_from_gemini:
+  - publish benchmark data as a dated, citable page with tables (statistics lift Perplexity visibility +37%, GEO study)
+  - Reddit is the biggest lever here: disclosed AMA + benchmark post in r/PPC, r/ecommerce
+  - refresh hub and comparisons monthly with visible "Last updated"
+measurement:
+  tracker: "python -m aeo run --engines perplexity --samples 5"

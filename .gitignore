@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+runs/
+# Case brief from the organizers is not redistributed
+*.pdf

@@ -1,0 +1,45 @@
+name: AI visibility run
+
+on:
+  workflow_dispatch:
+    inputs:
+      intents:
+        description: Intent panel
+        default: config/intents/pilot.yaml
+      samples:
+        description: Samples per prompt
+        default: "5"
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -t .
+      - name: Query engines
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY$OPENAI_API_KEY$PERPLEXITY_API_KEY$ANTHROPIC_API_KEY" ]; then
+            echo "No API keys configured in repo secrets; skipping run."; exit 0
+          fi
+          python -m aeo run \
+            --engines "$(python -c "import os;print(','.join(n for n,k in [('gemini','GEMINI_API_KEY'),('chatgpt','OPENAI_API_KEY'),('perplexity','PERPLEXITY_API_KEY'),('claude','ANTHROPIC_API_KEY')] if os.environ.get(k)))")" \
+            --intents "${{ github.event.inputs.intents || 'config/intents/pilot.yaml' }}" \
+            --samples "${{ github.event.inputs.samples || '5' }}"
+          cat runs/*/report.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: visibility-run
+          path: runs/
+          if-no-files-found: ignore

@@ -1,0 +1,36 @@
+# Proposed AI section for https://higgsfield.ai/robots.txt (merge into the existing
+# file; keep its service-path Disallow rules). Source: docs/research/03-scaling.md.
+#
+# Changes vs current file (checked 2026-10-28):
+#  + Claude-SearchBot, Claude-User, Applebot, meta-webindexer, Meta-ExternalFetcher listed explicitly
+#  - Claude-Web removed (retired agent)
+#  ! Localized paths: the hand-kept allowlist under /es /ja /ko /de /zh hides every new
+#    localized page from Googlebot and Bingbot. Generate this file from the page
+#    registry instead of editing ~1,000 Allow lines by hand.
+#  ! Google-Extended stays allowed: it does not affect AI Overviews / AI Mode, but it
+#    does control grounding in the Gemini app.
+
+# Search and retrieval crawlers (answers cite what these fetch)
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: PerplexityBot
+User-agent: Claude-SearchBot
+User-agent: Applebot
+User-agent: meta-webindexer
+# User-triggered fetchers (a person asked the assistant to open the page)
+User-agent: ChatGPT-User
+User-agent: Perplexity-User
+User-agent: Claude-User
+User-agent: Meta-ExternalFetcher
+# Training and grounding opt-out tokens: allowed, brand recall in model memory matters
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Meta-ExternalAgent
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+# (copy the existing service-path Disallow rules here)
+
+Sitemap: https://higgsfield.ai/sitemap.xml

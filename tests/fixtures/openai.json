@@ -1,0 +1,16 @@
+{
+  "output": [
+    {"type": "web_search_call", "id": "ws_1", "status": "completed",
+     "action": {"type": "search", "query": "best AI video ad tools 2026",
+                "sources": [{"type": "url", "url": "https://www.g2.com/categories/ai-video-generator"},
+                            {"type": "url", "url": "https://zapier.com/blog/best-ai-video-generator/"}]}},
+    {"type": "message", "role": "assistant", "content": [{
+      "type": "output_text",
+      "text": "Arcads and Creatify lead for performance ads; Runway is better for cinematic work.",
+      "annotations": [
+        {"type": "url_citation", "url": "https://zapier.com/blog/best-ai-video-generator/?utm_source=openai", "title": "The best AI video generators", "start_index": 0, "end_index": 30},
+        {"type": "url_citation", "url": "https://zapier.com/blog/best-ai-video-generator/?utm_source=openai", "title": "The best AI video generators", "start_index": 31, "end_index": 60}
+      ]
+    }]}
+  ]
+}

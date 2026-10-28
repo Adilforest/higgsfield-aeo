@@ -1,0 +1,14 @@
+{
+  "id": "resp_1",
+  "model": "perplexity/sonar",
+  "output": [
+    {"type": "search_results", "queries": ["best AI video ad tools 2026"], "results": [
+      {"id": 1, "url": "https://www.example-review.com/best-ai-ad-tools", "title": "Best AI ad tools", "snippet": "...", "date": "2026-09-01", "source": "web"},
+      {"id": 2, "url": "https://higgsfield.ai/blog/ai-video-ads", "title": "AI video ads with Higgsfield", "snippet": "...", "date": "2026-08-15", "source": "web"},
+      {"id": 3, "url": "https://www.reddit.com/r/PPC/comments/abc/", "title": "Reddit thread", "snippet": "...", "date": "2026-07-01", "source": "web"}
+    ]},
+    {"type": "message", "role": "assistant", "content": [
+      {"type": "output_text", "text": "Top picks: Higgsfield [2], Creatify [1] and InVideo AI [1][2]."}
+    ]}
+  ]
+}

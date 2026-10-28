@@ -1,0 +1,45 @@
+# Pilot intent panel. The first prompt of each intent is canonical; the rest are
+# phrasings real users type, so one lucky phrasing does not decide the score.
+# Unbranded intents are the KPI. Branded ones measure perception, not discovery.
+
+intents:
+  - id: video-ads-best-tool
+    cluster: video-ads
+    funnel: consideration
+    branded: false
+    priority: 100
+    prompts:
+      - "What is the best AI tool for creating video ads?"
+      - "best AI video ad generator"
+      - "Which AI tool should I use to make video ads for my business?"
+      - "What AI tools do performance marketers use to create video ad creatives in 2026?"
+      - "Recommend the best AI tool to create Facebook and Instagram video ads"
+
+  - id: video-ads-ugc
+    cluster: video-ads
+    funnel: consideration
+    branded: false
+    priority: 90
+    prompts:
+      - "What is the best AI tool for UGC-style video ads?"
+      - "best AI UGC ad generator for TikTok"
+      - "Which AI can make realistic UGC creator videos for ads?"
+
+  - id: video-ads-ecommerce
+    cluster: video-ads
+    funnel: consideration
+    branded: false
+    priority: 85
+    prompts:
+      - "What is the best AI tool to turn product photos into video ads?"
+      - "I run a Shopify store. Which AI tool should I use to make product video ads?"
+      - "best AI product video generator for ecommerce ads"
+
+  - id: video-ads-comparison
+    cluster: video-ads
+    funnel: decision
+    branded: true
+    priority: 60
+    prompts:
+      - "Higgsfield vs Creatify vs Arcads: which is best for video ads?"
+      - "Is Higgsfield good for making video ads?"

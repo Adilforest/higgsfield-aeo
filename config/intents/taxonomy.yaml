@@ -1,0 +1,105 @@
+# Intent taxonomy for scaling from 1 to 500+ intents.
+#   python -m aeo expand config/intents/taxonomy.yaml --limit 500 --out config/intents/generated.yaml
+# priority = template.weight x product(value weights), normalised to 0..100.
+# Weights encode business value x demand x winnability; recalibrate them from
+# keyword volumes and baseline gap once the first runs are in.
+
+templates:
+  - id: best
+    text: "What is the best AI tool for {use_case}?"
+    funnel: consideration
+    weight: 1.0
+  - id: persona
+    text: "I'm a {persona}. What is the best AI tool for {use_case}?"
+    funnel: consideration
+    weight: 0.8
+  - id: platform
+    text: "What is the best AI tool for {use_case} for {platform}?"
+    funnel: consideration
+    weight: 0.75
+  - id: free
+    text: "What is the best free AI tool for {use_case}?"
+    funnel: consideration
+    weight: 0.55
+  - id: alternatives
+    text: "What are the best alternatives to {competitor} for {use_case}?"
+    funnel: decision
+    weight: 0.6
+  - id: howto
+    text: "How do I make {use_case_object} with AI?"
+    funnel: awareness
+    weight: 0.45
+  - id: persona-platform
+    text: "I'm a {persona}. Which AI tool should I use for {use_case} on {platform}?"
+    funnel: consideration
+    weight: 0.4
+
+dimensions:
+  use_case:
+    - {id: video-ads, text: "creating video ads", weight: 1.0}
+    - {id: ugc-ads, text: "creating UGC-style video ads", weight: 0.95}
+    - {id: product-video, text: "turning product photos into videos", weight: 0.9}
+    - {id: image-to-video, text: "image-to-video generation", weight: 0.85}
+    - {id: social-shorts, text: "making short-form social videos", weight: 0.8}
+    - {id: cinematic-camera, text: "cinematic camera movements in AI video", weight: 0.75}
+    - {id: brand-content, text: "creating branded marketing videos", weight: 0.75}
+    - {id: ai-avatar, text: "AI avatar and talking-head videos", weight: 0.7}
+    - {id: vfx-effects, text: "adding VFX and visual effects to videos", weight: 0.65}
+    - {id: ai-image, text: "generating realistic AI photos", weight: 0.6}
+    - {id: ai-influencer, text: "creating an AI influencer", weight: 0.6}
+    - {id: lip-sync, text: "lip-sync videos", weight: 0.6}
+    - {id: music-video, text: "making music videos", weight: 0.55}
+    - {id: film-previs, text: "film pre-visualization and storyboards", weight: 0.45}
+    - {id: explainer, text: "explainer videos", weight: 0.4}
+  # Same use cases phrased as an object for the how-to template.
+  use_case_object:
+    - {id: video-ads, text: "video ads", weight: 1.0}
+    - {id: ugc-ads, text: "UGC ads", weight: 0.95}
+    - {id: product-video, text: "a product video from photos", weight: 0.9}
+    - {id: social-shorts, text: "viral short-form videos", weight: 0.8}
+    - {id: cinematic-camera, text: "cinematic shots", weight: 0.75}
+    - {id: music-video, text: "a music video", weight: 0.55}
+  persona:
+    - {id: performance-marketer, text: "performance marketer", weight: 1.0}
+    - {id: dtc-founder, text: "DTC e-commerce founder", weight: 1.0}
+    - {id: shopify-seller, text: "Shopify seller", weight: 0.9}
+    - {id: agency, text: "marketing agency owner", weight: 0.9}
+    - {id: smm, text: "social media manager", weight: 0.8}
+    - {id: creator, text: "content creator", weight: 0.8}
+    - {id: smb, text: "small business owner", weight: 0.7}
+    - {id: youtuber, text: "YouTuber", weight: 0.6}
+    - {id: filmmaker, text: "indie filmmaker", weight: 0.5}
+    - {id: musician, text: "musician", weight: 0.4}
+  platform:
+    - {id: meta-ads, text: "Facebook and Instagram ads", weight: 1.0}
+    - {id: tiktok, text: "TikTok", weight: 1.0}
+    - {id: reels, text: "Instagram Reels", weight: 0.9}
+    - {id: yt-shorts, text: "YouTube Shorts", weight: 0.8}
+    - {id: amazon, text: "Amazon product listings", weight: 0.6}
+    - {id: linkedin, text: "LinkedIn", weight: 0.4}
+  competitor:
+    - {id: creatify, text: "Creatify", weight: 1.0}
+    - {id: arcads, text: "Arcads", weight: 1.0}
+    - {id: heygen, text: "HeyGen", weight: 0.8}
+    - {id: runway, text: "Runway", weight: 0.8}
+    - {id: invideo, text: "InVideo", weight: 0.7}
+    - {id: synthesia, text: "Synthesia", weight: 0.6}
+
+# Combinations that make no sense are dropped.
+exclude:
+  - {use_case: music-video, platform: amazon}
+  - {use_case: music-video, platform: linkedin}
+  - {use_case: film-previs, platform: amazon}
+  - {use_case: film-previs, platform: tiktok}
+  - {use_case: film-previs, platform: meta-ads}
+  - {use_case: ai-influencer, platform: amazon}
+  - {use_case: product-video, persona: musician}
+  - {use_case: product-video, persona: filmmaker}
+  - {use_case: film-previs, persona: shopify-seller}
+  - {use_case: film-previs, persona: dtc-founder}
+  - {use_case: film-previs, persona: performance-marketer}
+  - {use_case: music-video, persona: performance-marketer}
+  - {use_case: music-video, persona: shopify-seller}
+  - {use_case: music-video, persona: dtc-founder}
+  - {use_case: ugc-ads, persona: filmmaker}
+  - {use_case: ugc-ads, persona: musician}

@@ -1,0 +1,19 @@
+# Single source of truth for facts engines repeat about Higgsfield.
+# Feeds: hub, /pricing, JSON-LD, press kit, G2/Capterra/Product Hunt profiles, Wikidata.
+# Owner: product marketing. Every value needs a source and a date; TBD = not verified yet.
+
+product: Higgsfield Marketing Studio
+category: AI video ad generator
+inputs: [product URL, app URL]
+time_to_first_ad: "about 2 minutes (vendor claim, verify in benchmark)"
+ad_modes: [TV Spot, UGC, Tutorial, Product Review, Unboxing, UGC Virtual Try-On, Hyper Motion, Pro Virtual Try-On, Wild Card]
+avatars: "40+ (Soul 2.0)"
+video_engine: Seedance 2.0
+related_tools: [Click to Ad, Ads Studio (static ads), Lipsync Studio]
+export_targets: TBD          # competitor reviews claim no direct Meta/TikTok export: confirm or ship
+batch_variations: TBD        # same
+pricing:
+  source: TBD                # /pricing must be server-rendered first; third-party grids conflict
+  plans: TBD
+commercial_license: TBD
+updated: 2026-10-28

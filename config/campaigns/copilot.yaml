@@ -1,0 +1,17 @@
+# Microsoft Copilot. No official answer API: Bing reports + SERP vendor + manual checks.
+campaign: higgsfield-video-ads-copilot
+extends: shared.yaml
+intent_panel: config/intents/pilot.yaml
+
+retrieval: "Bing index; sentence-level inline citations"
+bots:
+  allow: [Bingbot]                      # controls: NOARCHIVE / NOCACHE
+source_bias: "16.6% overlap with Bing top 10 (Ahrefs); one comparison page can dominate, then decay fast (69% of a site's citations, -97% in 2 months)"
+
+delta_from_gemini:
+  - same Bing work as ChatGPT (Bing Webmaster Tools, IndexNow)
+  - comparison pages carry outsized weight: keep /compare/* fresh monthly
+measurement:
+  first_party: "Bing Webmaster Tools > AI Performance (citations, pages, grounding queries; CSV only)"
+  vendor: "SerpApi engine=bing_copilot (vendor carries ToS risk)"
+  ui_panel: weekly manual check, 10 prompts

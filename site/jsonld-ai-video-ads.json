@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://higgsfield.ai/ai-video-ads#app",
+      "name": "Higgsfield Marketing Studio",
+      "alternateName": "Higgsfield AI Video Ad Generator",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "AI video ad generator",
+      "operatingSystem": "Web",
+      "url": "https://higgsfield.ai/ai-video-ads",
+      "description": "Turns a product or app URL into UGC, unboxing, try-on and TV-spot video ads with 40+ AI avatars.",
+      "featureList": [
+        "Product URL to video ad",
+        "9 ad modes incl. UGC, Unboxing, TV Spot, Virtual Try-On",
+        "40+ AI avatars",
+        "TikTok, Reels and Meta formats"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "TBD_FROM_PRICING_PAGE",
+        "highPrice": "TBD_FROM_PRICING_PAGE",
+        "url": "https://higgsfield.ai/pricing"
+      },
+      "publisher": {"@id": "https://higgsfield.ai/#organization"},
+      "dateModified": "TBD_ON_PUBLISH"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://higgsfield.ai/#organization",
+      "name": "Higgsfield",
+      "url": "https://higgsfield.ai",
+      "description": "AI video platform for creators and marketing teams: cinematic generation and Marketing Studio, an AI video ad generator that turns product links into UGC and TV-spot ads.",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q140561494",
+        "TBD_YOUTUBE_CHANNEL_URL",
+        "TBD_CRUNCHBASE_URL",
+        "TBD_G2_PROFILE_URL",
+        "TBD_PRODUCT_HUNT_URL",
+        "TBD_EXISTING_SOCIAL_URLS"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can Higgsfield create a video ad from a product link?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Paste a product or app URL into Marketing Studio, choose one of 9 modes and an avatar, and it generates a ready-to-post ad."}
+        },
+        {
+          "@type": "Question",
+          "name": "How much does one video ad cost on Higgsfield?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The credit cost depends on mode and length and is shown before generation. See the price table on this page."}
+        }
+      ]
+    }
+  ]
+}

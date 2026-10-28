@@ -1,0 +1,71 @@
+# Entity config for mention detection and citation attribution.
+# Aliases are matched as whole words, case-insensitive. Avoid generic words
+# ("captions", "pencil", "flow") as bare aliases: they create false positives.
+# The name itself is matched only when no aliases are given.
+
+target:
+  name: Higgsfield
+  aliases: ["Higgsfield", "Higgsfield AI", "Higgsfield.ai"]
+  domains: ["higgsfield.ai"]
+
+competitors:
+  - name: Creatify
+    aliases: ["Creatify", "Creatify AI"]
+    domains: ["creatify.ai"]
+  - name: Arcads
+    aliases: ["Arcads", "Arcads AI", "Arcads.ai"]
+    domains: ["arcads.ai"]
+  - name: HeyGen
+    aliases: ["HeyGen"]
+    domains: ["heygen.com"]
+  - name: Synthesia
+    aliases: ["Synthesia"]
+    domains: ["synthesia.io"]
+  - name: InVideo
+    aliases: ["InVideo", "InVideo AI", "invideo.io"]
+    domains: ["invideo.io"]
+  - name: AdCreative.ai
+    aliases: ["AdCreative.ai", "AdCreative"]
+    domains: ["adcreative.ai"]
+  - name: Pencil
+    aliases: ["Pencil AI", "trypencil", "Pencil (by Brandtech)"]
+    domains: ["trypencil.com"]
+  - name: Runway
+    aliases: ["Runway", "RunwayML", "Runway Gen-4", "Runway Gen-3"]
+    domains: ["runwayml.com"]
+  - name: Captions
+    aliases: ["Captions AI", "Captions.ai", "Captions app", "Mirage by Captions"]
+    domains: ["captions.ai"]
+  - name: Canva
+    aliases: ["Canva"]
+    domains: ["canva.com"]
+  - name: CapCut
+    aliases: ["CapCut", "CapCut Commerce Pro"]
+    domains: ["capcut.com"]
+  - name: Topview
+    aliases: ["Topview", "Topview AI", "Topview.ai"]
+    domains: ["topview.ai"]
+  - name: Google Veo
+    aliases: ["Veo", "Veo 3", "Google Veo", "Google Flow", "Flow by Google"]
+    domains: ["deepmind.google", "labs.google"]
+  - name: Sora
+    aliases: ["Sora", "OpenAI Sora", "Sora 2"]
+    domains: ["openai.com", "sora.com"]
+  - name: Kling
+    aliases: ["Kling", "Kling AI"]
+    domains: ["klingai.com"]
+  - name: Pika
+    aliases: ["Pika", "Pika Labs"]
+    domains: ["pika.art"]
+  - name: MakeUGC
+    aliases: ["MakeUGC"]
+    domains: ["makeugc.ai"]
+  - name: Pictory
+    aliases: ["Pictory"]
+    domains: ["pictory.ai"]
+  - name: VEED
+    aliases: ["VEED", "VEED.io"]
+    domains: ["veed.io"]
+  - name: Luma
+    aliases: ["Luma Dream Machine", "Luma AI", "Dream Machine"]
+    domains: ["lumalabs.ai"]

@@ -1,0 +1,55 @@
+# Answer engines the tracker can query. API answers are a proxy for the consumer
+# UI (no personalisation, different system prompt), so treat them as a
+# consistent, repeatable panel, and spot-check the real UI weekly.
+#
+#   python -m aeo engines          # show which engines have keys
+#   python -m aeo run --engines gemini --samples 5
+
+engines:
+  gemini:
+    enabled: true
+    adapter: gemini
+    model: gemini-3.8-flash          # stable as of 2026-10; 2.5 models are closed to new projects
+    api_key_env: GEMINI_API_KEY      # https://aistudio.google.com/apikey, billing must be on:
+                                     # grounding on Gemini 3+ is paid tier only (5k searches/mo free, then $14/1k)
+    # Gemini API Terms forbid programmatic collection/analysis of grounding Links.
+    # Keep false until legal signs off; domains still come from chunk titles.
+    resolve_redirects: false
+    proxies: [Gemini app, Google AI Mode]
+
+  # Same model without retrieval: what Gemini "remembers" about the category.
+  # Compare mention_rate with the grounded run to split memory from retrieval.
+  gemini-memory:
+    enabled: false
+    adapter: gemini
+    model: gemini-3.8-flash
+    api_key_env: GEMINI_API_KEY
+    google_search: false
+    proxies: [Gemini parametric memory]
+
+  chatgpt:
+    enabled: false
+    adapter: openai
+    model: gpt-6.1-sol
+    api_key_env: OPENAI_API_KEY
+    tool_type: web_search
+    proxies: [ChatGPT search]
+
+  perplexity:
+    enabled: false
+    adapter: perplexity
+    model: perplexity/sonar          # Agent API; Sonar chat completions retired 2026-09-27
+    api_key_env: PERPLEXITY_API_KEY
+    proxies: [Perplexity]
+
+  claude:
+    enabled: false
+    adapter: anthropic
+    model: claude-sonnet-5-5
+    api_key_env: ANTHROPIC_API_KEY
+    tool_type: web_search_20250305
+    max_uses: 5
+    proxies: [Claude.ai with web search]
+
+# Surfaces without an official API (Google AI Overviews, Copilot, Grok, Meta AI)
+# are covered by weekly manual spot checks or a SERP vendor; see docs/research/03-scaling.md.

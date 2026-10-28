@@ -1,0 +1,69 @@
+# Assets every engine campaign reuses. Engines differ in retrieval stack, not in
+# what a trustworthy answer needs: one clear entity, independent consensus,
+# third-party proof and no trust red flags.
+# Evidence: docs/research/02-higgsfield-promotion.md (sections B, D, E).
+
+entity:
+  brand: Higgsfield
+  product: Higgsfield Marketing Studio
+  category_phrase: "AI video ad generator"          # use verbatim everywhere machines read
+  one_liner: >-
+    Higgsfield Marketing Studio turns a product or app link into UGC, unboxing,
+    try-on and TV-spot video ads in about two minutes, with 40+ AI avatars.
+  organization_description: >-
+    AI video platform for creators and marketing teams: cinematic generation and
+    Marketing Studio, an AI video ad generator that turns product links into UGC
+    and TV-spot ads.
+  canonical_hub: https://higgsfield.ai/ai-video-ads
+  # 9+ overlapping ad landing pages split the signal. Each one either 301s to the
+  # hub, gets rel=canonical to it, or stays as a narrow sub-page linking to it.
+  consolidate:
+    - {url: /ai-ad-generator, action: redirect_or_become_hub}
+    - {url: /marketing-automation, action: canonical_to_hub}
+    - {url: /marketing-studio-intro, action: canonical_to_hub}
+    - {url: /ai-marketing-video-maker, action: canonical_to_hub}
+    - {url: /ai-commercial-generator, action: canonical_to_hub}
+    - {url: /ai-product-video-generator, action: keep_as_subpage}   # product video sub-intent
+    - {url: /ugc, action: keep_as_subpage}                          # UGC sub-intent
+    - {url: /commercial, action: canonical_to_hub}
+    - {url: /ads-studio-intro, action: keep_as_subpage}             # static ads
+  fixes:
+    - {where: homepage title, now: "Higgsfield AI — AI-native creative suite", to: "Higgsfield — AI Video Generator & AI Video Ad Studio"}
+    - {where: homepage, now: "no link to /ai-ad-generator, ads mentioned once", to: "Video Ads block linking to the hub"}
+    - {where: Organization JSON-LD description, now: "Face swap, virtual try-on, cinema studio…", to: organization_description}
+    - {where: Organization sameAs, now: "X, Instagram, TikTok, Discord, LinkedIn", add: [YouTube, Wikidata Q140561494, Crunchbase, G2, Product Hunt]}
+    - {where: "og/meta description on /pricing, /ugc, /commercial", now: "The ultimate AI-powered camera control for creators by creators", to: page-specific copy}
+    - {where: /llms.txt, now: "no Marketing Studio", add: "Marketing & Ads section"}
+    - {where: /pricing, now: "66 words in raw HTML, no prices", to: "server-rendered price table + Offer schema"}
+    - {where: Wikidata, now: "duplicate Q141663132 with typo domain higsfield.io", to: "merge request into Q140561494"}
+
+facts:            # single source of truth for site, schema, press kit, review profiles
+  file: config/brand_facts.yaml   # to be filled by product marketing; engines repeat what they find
+  audit: monthly  # compare what engines say about prices/features with this file -> accuracy_rate
+
+assets:
+  - id: hub
+    what: "/ai-video-ads: answer-first hub, ~2,500 words, SSR, dated, named author"
+    spec: site/hub-ai-video-ads.md
+  - id: benchmark
+    what: "Public test: 10 products × 6 tools × 2 formats = 120 ads, blind panel of 5 media buyers, raw data open"
+    tools: [Higgsfield, Creatify, Arcads, HeyGen, Topview, MakeUGC]
+    rule: "publish where Higgsfield loses too; give competitors right of reply"
+  - id: comparisons
+    what: "Honest vs pages with dated fact tables and 'choose X if…'"
+    urls: [/compare/higgsfield-vs-creatify, /compare/higgsfield-vs-arcads, /compare/higgsfield-vs-topview, /compare/higgsfield-vs-makeugc]
+  - id: youtube
+    what: "6 'tested' videos with chapters, transcripts, hub link + 2 independent creators with paid-partnership label"
+  - id: reviews
+    what: "G2 / Capterra reviews from real paying Marketing Studio customers via official programs; Product Hunt launch"
+  - id: trust
+    what: "/trust/changes: refunds, what 'unlimited' means in numbers, creator payout SLA, promo moderation policy"
+
+guardrails:       # breaking any of these costs more than it can win
+  - no paid placements in listicles without sponsored label and rel="sponsored"
+  - no fake, bought or undisclosed employee reviews (FTC final rule, 2024-08-14)
+  - no undisclosed creator payments (FTC Endorsement Guides)
+  - no hidden text or prompt injection aimed at LLMs (Google spam policy, reputational risk)
+  - no mass prompt-matching pages (Google scaled content abuse); geo.higgsfield.ai -> 10-15 useful pages or noindex
+  - Reddit only from disclosed team accounts, within each subreddit's rules
+  - Wikipedia only via talk-page requests with COI disclosure

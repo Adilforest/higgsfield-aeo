@@ -1,0 +1,21 @@
+{
+  "candidates": [{
+    "content": {"role": "model", "parts": [
+      {"text": "For video ads the strongest options are Creatify for URL-to-ad workflows and Arcads for UGC actors. "},
+      {"text": "Higgsfield is a good pick for cinematic product shots, and HeyGen covers avatars."}
+    ]},
+    "groundingMetadata": {
+      "webSearchQueries": ["best AI tool for video ads 2026", "AI video ad generator comparison"],
+      "groundingChunks": [
+        {"web": {"uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AAA", "title": "zapier.com"}},
+        {"web": {"uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/BBB", "title": "higgsfield.ai"}},
+        {"web": {"uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/CCC", "title": "reddit.com"}},
+        {"web": {"uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/DDD", "title": "g2.com"}}
+      ],
+      "groundingSupports": [
+        {"segment": {"startIndex": 104, "endIndex": 180}, "groundingChunkIndices": [1]},
+        {"segment": {"startIndex": 0, "endIndex": 103}, "groundingChunkIndices": [2, 0]}
+      ]
+    }
+  }]
+}

@@ -1,0 +1,9 @@
+{
+  "choices": [{"message": {"role": "assistant", "content": "Top picks: Creatify [1], Higgsfield [2] and InVideo AI [1]."}}],
+  "citations": ["https://www.example-review.com/best-ai-ad-tools", "https://higgsfield.ai/blog/ai-video-ads"],
+  "search_results": [
+    {"title": "Best AI ad tools", "url": "https://www.example-review.com/best-ai-ad-tools", "date": "2026-09-01"},
+    {"title": "AI video ads with Higgsfield", "url": "https://higgsfield.ai/blog/ai-video-ads", "date": "2026-08-15"},
+    {"title": "Reddit thread", "url": "https://www.reddit.com/r/PPC/comments/abc/", "date": "2026-07-01"}
+  ]
+}

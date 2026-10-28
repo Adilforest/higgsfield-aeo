@@ -1,0 +1,17 @@
+# Claude (claude.ai with web search). Evidence: docs/research/03-scaling.md (engine map, 2.3).
+campaign: higgsfield-video-ads-claude
+extends: shared.yaml
+intent_panel: config/intents/pilot.yaml
+engine_key: claude                      # Anthropic Messages API + web_search_20250305
+
+retrieval: "Brave Search (79-87% result overlap reported); low data on source bias (confidence: low)"
+bots:
+  allow: [Claude-SearchBot, Claude-User]    # both respect robots.txt
+  training: ClaudeBot
+  remove: [Claude-Web]                      # retired agent still listed in higgsfield.ai/robots.txt
+
+delta_from_gemini:
+  - check that hub, comparisons and benchmark are indexed in Brave (search.brave.com) and submit if not
+  - add Claude-SearchBot and Claude-User to the explicit AI group in robots.txt
+measurement:
+  tracker: "python -m aeo run --engines claude --samples 5"

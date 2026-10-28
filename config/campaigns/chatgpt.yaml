@@ -1,0 +1,21 @@
+# ChatGPT search. Evidence: docs/research/03-scaling.md (engine map, 2.1).
+campaign: higgsfield-video-ads-chatgpt
+extends: shared.yaml
+intent_panel: config/intents/pilot.yaml
+engine_key: chatgpt                     # config/engines.yaml (OpenAI Responses API + web_search)
+weight_in_index: 0.53                   # share of AI referral traffic, Similarweb 2026-05
+
+retrieval: "own index (OAI-SearchBot) + third-party providers incl. Bing; 87% of citations overlap Bing top results (Seer, 2025)"
+bots:
+  allow: [OAI-SearchBot, ChatGPT-User]  # search + user fetches
+  training: GPTBot                      # keep allowed: parametric memory matters for brand recall
+source_bias: "listicles cited most; Wikipedia 7.8-16.3%; Reddit share fell from ~60% to ~10% of prompts (2025-09)"
+
+delta_from_gemini:                      # what to add on top of the Gemini campaign
+  - Bing Webmaster Tools: verify higgsfield.ai, submit sitemaps, read the AI Performance report
+  - IndexNow on publish for hub, comparisons, benchmark, pricing
+  - make sure the benchmark and hub rank in Bing, not only Google
+  - ChatGPT answers name more brands (13.8 via API vs 7.9 in app): optimise for top-3, not presence
+measurement:
+  tracker: "python -m aeo run --engines chatgpt --samples 5"
+  calibration: "API and app overlap on brands only 15-32% (Surfer 2026): monthly UI check"

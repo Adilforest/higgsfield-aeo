@@ -1,0 +1,133 @@
+# Gemini campaign: Google AI Overviews, AI Mode, Gemini app (+ Gemini API as the
+# measurable proxy). Pilot for every later engine.
+# Evidence: docs/research/01-how-gemini-gets-context.md, 02-higgsfield-promotion.md.
+# Roadmap: ROADMAP.md. Shared entity/assets/guardrails: config/campaigns/shared.yaml.
+
+campaign: higgsfield-video-ads-gemini
+extends: shared.yaml
+intent_panel: config/intents/pilot.yaml
+primary_intent: "What is the best AI tool for creating video ads?"
+
+goal:
+  north_star: top1_rate on the unbranded video-ads cluster
+  # #1 on the head intent against Creatify (27 of 29 lists) is not an 8-week
+  # outcome. We climb a ladder and take #1 first where the product is strongest.
+  ladder:
+    - {week: 0,  target: baseline measured on every surface}
+    - {week: 4,  mention_rate: 0.40}
+    - {week: 8,  mention_rate: 0.50, top3_rate: 0.20}
+    - {week: 12, mention_rate: 0.60, top3_rate: 0.30}
+    - {week: 26, top1_rate: 0.30, scope: [video-ads-ecommerce, "product link to video ad"]}
+
+# How each surface builds context, and what that means for us.
+surfaces:
+  google_aio:
+    retrieval: "Google index + core ranking + query fan-out; Gemini 3 since 2026-01"
+    citation_profile: "~1.3 entities per answer; 37.9% of citations from organic top 10 (Ahrefs, 2026-03)"
+    eligibility: [indexed, snippet-eligible, "Search Console: Search generative AI = Include"]
+    google_extended: no effect
+    levers: [listicles that rank for main + fan-out queries, YouTube, Reddit]
+    measure: [manual UI panel weekly, "GSC Generative AI performance report"]
+  google_ai_mode:
+    retrieval: "query fan-out, Deep Search up to hundreds of searches, Shopping Graph; Gemini 3.5 Flash default"
+    citation_profile: "~3.3 entities per answer; 13.7% citation overlap with AIO"
+    google_extended: no effect
+    levers: [listicles, Quora (3.5x more than AIO), Wikipedia/Wikidata entity, comparison pages]
+    measure: [manual UI panel weekly, "optional: SERP vendor ai_mode endpoint (vendor carries ToS risk)"]
+  gemini_app:
+    retrieval: "model decides whether to search; Google Search grounding; personalised"
+    citation_profile: "Sources button only when it searched; memory-only answers have no links"
+    google_extended: "controls grounding here: keep allowed"
+    levers: [same as AIO + entity association in training data]
+    measure: [manual UI panel weekly, "tracker: gemini vs gemini-memory"]
+  gemini_api:
+    role: measurable proxy, not the consumer answer
+    engine_keys: [gemini, gemini-memory]   # config/engines.yaml
+    exposes: [webSearchQueries (real fan-out), groundingChunks (domains), groundingSupports]
+    legal: "Terms forbid programmatic collection/analysis of Links: legal review before scaling; resolve_redirects off"
+
+# Sub-queries Gemini is expected to fan out to. Pages must rank for these, not
+# only for the head query (51% of cited pages rank for main + >=1 fan-out, Surfer).
+# Replace with the tracker's real webSearchQueries after the baseline.
+fanout_targets:
+  - ai ugc ad generator
+  - ai video ads for ecommerce
+  - product link to video ad ai
+  - ai ads for tiktok
+  - ai video ads for facebook and instagram
+  - ai ad variations at scale
+  - heygen vs creatify
+  - creatify alternatives
+  - arcads alternatives
+  - best ai video ad generator 2026
+
+# Owned pages, mapped to the fan-out they should rank for.
+owned_pages:
+  - {url: /ai-video-ads, targets: [best ai video ad generator 2026, product link to video ad ai], status: to_build}
+  - {url: /ugc, targets: [ai ugc ad generator], status: rewrite}
+  - {url: /ai-product-video-generator, targets: [ai video ads for ecommerce], status: rewrite}
+  - {url: /compare/higgsfield-vs-creatify, targets: [creatify alternatives, heygen vs creatify], status: to_build}
+  - {url: /compare/higgsfield-vs-arcads, targets: [arcads alternatives], status: to_build}
+  - {url: /pricing, targets: [higgsfield pricing], status: fix_ssr}
+
+# Citation hubs for this intent: third-party pages already in the retrieval pool.
+# status: absent | listed_low (#6+) | listed_top3 | n/a
+hubs:
+  editorial:
+    - {url: https://startuptalky.com/best-ai-video-ad-generators, why: independent media, status: absent, priority: 1}
+    - {url: https://layer3labs.io/guides/best-ai-ugc-video-tools, why: neutral consulting, status: listed_top3, priority: 1}
+    - {url: https://www.cometly.com/post/best-ai-video-ad-generator, why: "repeats across 4+ queries", status: absent, priority: 1}
+    - {url: https://www.cometly.com/post/best-ai-tool-for-ugc-ads, why: "repeats across queries", status: absent, priority: 1}
+    - {url: https://segwise.ai/blog/best-ai-video-ad-generators-2026, why: ranks for 2026 query, status: listed_low, priority: 2}
+    - {url: https://www.ngram.com/blog/who-makes-best-ai-generated-ad-videos, status: absent, priority: 2}
+    - {url: https://outlierkit.com/blog/best-ai-tools-for-ad-creation, status: absent, priority: 2}
+    - {url: https://socialoperator.ai/learn/best-ai-video-ad-tools-2026, status: absent, priority: 2}
+    - {url: https://venngage.com/blog/best-ai-ad-generator/, status: absent, priority: 2}
+    - {url: https://hyperfx.ai/blog/best-ai-ugc-tools-for-ads-2026, status: listed_low, priority: 3}
+    - {url: https://learn.g2.com/best-ai-video-generators, why: "G2 editorial: Creatify = Best for AI video ads", status: absent, priority: 3, after: reviews >= 150}
+    - {url: https://zapier.com/blog/best-ai-video-generator/, status: absent, priority: 3}
+  counter_narrative:   # competitor-written pages that set the story about us; answer with facts, not attacks
+    - https://creatify.ai/blog/higgsfield-ai-review-(2026)-is-it-worth-it
+    - https://www.heygen.com/blog/higgsfield-alternatives
+    - https://v4v.ai/blog/higgsfield-ai-review-2026/
+  video: {domain: youtube.com, why: "top cited domain in AIO; strongest brand-visibility correlation (0.737)"}
+  community: {reddit: [r/ecommerce, r/shopify, r/FacebookAds, r/PPC, r/TikTokAds, r/aivideo], quora: true}
+  reviews: [g2.com, capterra.com, producthunt.com, trustpilot.com]
+  reference: {wikidata: Q140561494, wikipedia: "Draft:Higgsfield AI via AfC, disclosed COI only"}
+
+technical:
+  robots_txt: site/robots-ai.txt          # keep Googlebot + Google-Extended allowed
+  forbid_on_ad_pages: [nosnippet, "max-snippet below -1", noindex]
+  search_console: {generative_ai: include, report: "Generative AI performance (since 2026-06)"}
+  ssr_required: [/pricing, /marketing-studio, /ai-video-ads]
+  schema: site/jsonld-ai-video-ads.json   # hygiene: Google says no special markup is needed
+  geo_subdomain: {host: geo.higgsfield.ai, issue: "robots.txt/sitemap 500, no canonical, ~50 self-promo pages", action: "noindex or keep 10-15 useful pages with canonical on main domain"}
+  locales: "robots.txt allowlist for /es /ja /ko /de /zh blocks new localized pages: generate robots.txt from a page registry"
+
+measurement:
+  tracker: "python -m aeo run --engines gemini,gemini-memory --samples 5"
+  ui_panel: {prompts: 10, surfaces: [google_aio, google_ai_mode, gemini_app], checks_per_week: 3, profile: "clean, en-US, logged out where possible", evidence: screenshots}
+  kpis: [mention_rate, top1_rate, avg_rank, owned_cite_rate, citation_share, share_of_voice, hub_coverage]
+  hub_coverage: "share of hubs above (weighted by priority) where Higgsfield is listed top-3 with ad-tool positioning"
+  cadence: weekly report, monthly UI calibration
+
+experiments:
+  - id: exp-01-entity
+    change: hub + entity fixes (bet 1)
+    test: [video-ads-best-tool, video-ads-ecommerce]
+    control: [ai-image--best, music-video--best]        # clusters with no shared hubs
+    window_weeks: 4
+    readout: difference-in-differences on mention_rate
+  - id: exp-02-hubs
+    change: benchmark + listicle outreach (bet 2)
+    test: [video-ads-best-tool, video-ads-ugc]
+    readout: pre/post per hub URL (hub_coverage) + mention_rate
+
+budget_usd:   # 8 weeks, see ROADMAP.md
+  benchmark: 1500
+  pr_outreach: 350
+  youtube: 1500
+  g2_reviews: 750
+  tracking: 400
+  reserve: 500
+  total: 5000
